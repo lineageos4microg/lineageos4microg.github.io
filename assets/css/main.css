@@ -3189,7 +3189,7 @@
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
 					box-shadow: none;
-					background-color: #4696e5;
+					background-color: rgba(22, 124, 128, 0.79);
 					color: #ffffff !important;
 				}
 
@@ -3198,7 +3198,7 @@
 					.wrapper.style2 input[type="button"].special:hover,
 					.wrapper.style2 button.special:hover,
 					.wrapper.style2 .button.special:hover {
-						background-color: #5ca3e8;
+						background-color: #167c80;
 					}
 
 					.wrapper.style2 input[type="submit"].special:active,
@@ -3627,7 +3627,7 @@
 /* Header */
 
 	#header {
-		background-color: #4696e5;
+		background-color: #167c80;
 		color: #d0e4f8;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
@@ -3683,7 +3683,7 @@
 			#header .button.special {
 				box-shadow: none;
 				background-color: #ffffff;
-				color: #4696e5 !important;
+				color: #167c80 !important;
 			}
 
 		#header label {
