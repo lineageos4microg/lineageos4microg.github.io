@@ -71,7 +71,7 @@
 						<div class="image"><img src="images/screen03.jpg" alt="" /></div>
 						<div class="content">
 							<h3>OTA updates</h3>
-							<p>We ship OTA updates from upstream LineageOS every day. In this way you always receive new features and security updates few hours after they are released mainline.</p>
+							<p>We ship OTA updates from upstream LineageOS every day. In this way you always receive new features and security updates just few hours after they are released mainline.</p>
 						</div>
 					</section>
 					<section class="special">
@@ -102,44 +102,45 @@
 					</header>
                     <section>
                             <p>This ROM has few changes from the official LineageOS ROM, so you can follow the installation guide for your device on the <a href=https://wiki.lineageos.org/devices/>LineageOS wiki</a>.</p>
-                            Before installing the ZIP you should check if it has the correct signature: run
+                            Before installing the ZIP you should check that it has the correct signature:
                             <pre><code>keytool -list -printcert -jarfile lineage-microG.zip</code></pre>
-                            and check that the printed fingerprints match with these ones</p><p>
+                            the printed fingerprints should match with these ones</p><p>
                             <pre><code>Certificate fingerprints:
-MD5:  54:73:70:C6:4B:FE:31:88:ED:18:F5:DF:1E:08:EB:19
-SHA1: C1:BE:BA:F7:9A:57:74:B7:5B:82:D5:0A:36:60:24:99:00:98:5D:C7
-SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7:58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0</code></pre></p>
+MD5:    54:73:70:C6:4B:FE:31:88:ED:18:F5:DF:1E:08:EB:19
+SHA1:   C1:BE:BA:F7:9A:57:74:B7:5B:82:D5:0A:36:60:24:99:00:98:5D:C7
+SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
+        58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0</code></pre></p>
                     </section>
 					<section>
 						<h3>Migration from LineageOS</h3>
-						    <p>Our ROM and LineageOS uses different signing keys, so you can't flash our ROM on top of the official LineageOS; however, the procedure needed to migrate from the official LineageOS to this ROM are very simple.</p>
+						    <p>Our ROM and LineageOS use different signing keys, so you can't flash our ROM on top of the official LineageOS; however, the procedure needed to migrate from the official LineageOS is very simple.</p>
 					</section>
                     <section>
-                        <h4>Clean installation (= wipe data and installed apps)</h4>
-                            <p>If you don't care about losing your current data just reboot into recovery, wipe Data, Cache and Dalvik (called "Factory reset") and, without rebooting, install LineageOS for microG.</p>
+                        <h4>Clean install = wipe data and installed apps</h4>
+                            <p>If you don't care about losing your current data just reboot into recovery, wipe Data, Cache and Dalvik (perform a "Factory reset") and, without rebooting, install LineageOS for microG.</p>
                     </section>
                     <section>
-                        <h4>Dirty installation (= keep data and installed apps)</h4>
+                        <h4>Dirty install = keep data and installed apps</h4>
                             <p>If you instead don't want to lose your current data, you can use our <a href=LINK>migration ZIP</a>, that replaces the LineageOS' keys with ours.
                             However, if you have installed unofficial builds of:
                             <ul>
                                 <li>F-Droid or F-Droid Privileged Extension</li>
-                                <li>microG's APPs (GmsCore, GsfProxy, FakeStore and mapsv1 API)</li>
+                                <li>microG's apps (GmsCore, GsfProxy, FakeStore and mapsv1 API)</li>
                                 <li>MozillaNlpBackend</li>
                                 <li>NominatimNlpBackend</li>
                             </ul>
                             you have to uninstall them before the ROM migration. You also have to uninstall the GApps if you have previously installed them.</p>
-                            <p>Then download <a href=LINK>the migration ZIP</a> and <a href=LINK>a build of LineageOS for microG</a> (make sure the ZIP you're installing is newer than the current installed ROM, if not wait for the next build), reboot in recovery, install the migration ZIP and, without rebooting, install LineageOS for microG.</p>
+                            <p>Finally download <a href=LINK>the migration ZIP</a> and <a href=LINK>a build of LineageOS for microG</a> (make sure the ZIP you're installing is newer than the current installed ROM, if it is not, wait for the next build), reboot in recovery, install the migration ZIP and, without rebooting, install LineageOS for microG.</p>
                     </section>
 					<header class="major">
 						<h2>Post-install</h2>
 					</header>
                     <section>
-                        <p>First, open the "microG Settings" app and check if everything is OK in the "Self-Check" section. The UnifiedNlp section will have some issue: that's normal, we haven't configured it yet.</p>
+                        <p>First, open the "microG Settings" app and check if everything is OK in the "Self-Check" section. The UnifiedNlp section will have some issues: that's normal, we haven't configured it yet.</p>
                     </section>
 					<section>
 						<h3>UnifiedNlp</h3>
-                            <p>UnifiedNlp is the microG Network Location Provider, which provides the current location of the device without the use of the GPS. While the Google's NLP can only use Google's servers for the positioning, UnifiedNlp obtains the geolocation through different plugins, which interface to different services.</p>
+                            <p>UnifiedNlp is the microG Network Location Provider, which provides the current location of the device without the use of the GPS. While Google's NLP can only use Google's servers for positioning, UnifiedNlp obtains the geolocation through different plugins, which interface to different services.</p>
                             <p>By default there are two plugins installed:
                             <ul>
                                 <li><a href=https://f-droid.org/packages/org.microg.nlp.backend.ichnaea/>MozillaNlpBackend</a>, which uses the <a href=https://location.services.mozilla.com/>Mozilla Location Service</a> (online)</li>
@@ -147,25 +148,26 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7:58:56:54:09:49:31:9D:FD:
                             </ul>
                             If you want to use these plugins, go to microG Settings -> UnifiedNlp Settings, configure and enable both.</p>
                             <p>If you instead want different plugins (like the <a href=https://f-droid.org/packages/org.fitchfamily.android.gsmlocation/>LocalGsmNlpBackend</a>, which uses a local offline database of the GSM towers to obtain the location) you can download them in F-Droid and enable them in the same way.</p>
-                            <p>Then reboot and check whether UnifiedNlp is correctly set up in the "Self-Check" section of the "microG Settings" app.</p>
+                            <p>Reboot and check whether UnifiedNlp is correctly set up in the "Self-Check" section of the "microG Settings" app.</p>
 					</section>
                     <section>
                         <h3>F-Droid</h3>
-                            <p>You should add the microG's repository to F-Droid, so that you can easily update the microG's packages. On your device, follow <a href=https://microg.org/fdroid.html>this link</a> and open the microG's F-Droid link in F-Droid (or scan the QR code) to add the repository.</p>
-                            <p>Moreover, you have the F-Droid Privileged Extension, why not use it? If you want you can go in Settings and enable the auto updates.</p>
+                            <p>You should add microG's repository to F-Droid, so that you can easily update microG's packages.
+                            On your device, follow <a href=https://microg.org/fdroid.html>this link</a> and open microG's F-Droid link in F-Droid (or scan the QR code) to add the repository.</p>
+                            <p>Moreover, you have the F-Droid Privileged Extension installed by default, why not use it? To make a good use of it go to the F-Droid Settings and enable auto updates.</p>
 					</section>
                     <section>
                         <h3>Google Cloud Messaging</h3>
-                            <p>Many apps relies on the Google Cloud Messaging, a Google proprietary system to push notifications to your device. This feature is implemented in microG but, as not every user requires it, it is disabled by default. If you need it, enable the "Google Device registration" and the "Google Cloud Messaging" features in the "microG Settings" app.</p>
+                            <p>Many apps rely on the Google Cloud Messaging, a Google proprietary system to push notifications to your device. This feature is implemented in microG but, as not every user requires it, is disabled by default. If you need it, enable the "Google Device registration" and the "Google Cloud Messaging" features in the "microG Settings" app.</p>
 					</section>
                     <section>
                         <h3>Weather service</h3>
-                            <p>If you want the weather features of LineageOS (like in the lock screen or in the cLock widget) you have to download a weather provider from <a href=https://download.lineageos.org/extras>here</a>. Choose your favorite one, install and configure it in cLock (or in Settings &#8594; Apps &#8594; Gear icon &#8594; Weather).</p>
+                            <p>If you want the weather features of LineageOS (like in the lock screen or in the cLock widget) you have to download a weather provider from <a href=https://download.lineageos.org/extras>here</a>. Choose your favorite one, install it and configure it in cLock (or in Settings &#8594; Apps &#8594; Gear icon &#8594; Weather).</p>
                             <p>If you don't want to enable "Unknown sources" you can also import the <a href=LINK>PlayMaker demo</a> repository in F-Droid (by adding <a href=LINK>this</a> URL to F-Droid) and download it from there.</p>
 					</section>
                     <section>
                         <h3>SU (root)</h3>
-                            <p>Our ROM doesn't include root by deafult for security reasons, but you can easily install it: go <a href=https://download.lineageos.org/extras>here</a>, download the appropriate ZIP and install it in recovery.</p>
+                            <p>Our ROM doesn't include root by deafult for security reasons, but you can easily install it: go <a href=https://download.lineageos.org/extras>here</a>, download the appropriate ZIP and install it from the recovery.</p>
 					</section>
                                         <!-- Three -->
 						</ul>
