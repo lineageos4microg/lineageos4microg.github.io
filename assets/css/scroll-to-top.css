@@ -1,0 +1,41 @@
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  z-index: 2000;
+  border-radius: 8px;
+  background-color: rgba(22, 124, 128, 0.79);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  overflow: hidden;
+}
+.scroll-to-top:before, .scroll-to-top:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 15px;
+  background-color: #fff;
+  height: 20px;
+  width: 5px;
+}
+.scroll-to-top:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 28px;
+}
+.scroll-to-top:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 28px;
+}
+.scroll-to-top:focus {
+  outline: none;
+}
