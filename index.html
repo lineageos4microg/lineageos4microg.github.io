@@ -1,267 +1,440 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+        Fractal by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<head>
-		<title>LineageOS for microG</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/scroll-to-top.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-                <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-                <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-                <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-	</head>
-	<body id="top">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<h1><a href="#">LineageOS for microG</a></h1>
-					<p>Access all the Google services<br />
-					without proprietary closed software</p>
-					<ul class="actions">
-						<li><a href="https://download.lineage.microg.org/" class="button special icon fa-download">Download</a></li>
-						<li><a href="#instructions" class="button icon fa-chevron-down scrolly">Installation</a></li>
-						<li><a href="#faq" class="button icon fa-chevron-down scrolly">FAQ</a></li>
-					</ul>
-				</div>
-				<div class="image phone"><div class="inner"><img src="images/screen_logo.jpg" alt="" /></div></div>
-			</header>
-
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-				<header class="major">
-					<h2>
-                                        <a href="https://lineageos.org/">LineageOS</a>
-                                        unofficial fork with built-in<br />
-					<a href="https://microg.org/">microG</a> gapps implementation</h2>
-				</header>
-				<ul class="icons major">
-					<li><span class="icon fa-refresh"><span class="label">Updates</span></span></li>
-					<li><span class="icon fa-cloud"><span class="label">GooglePlay</span></span></li>
-					<li><span class="icon fa-code"><span class="label">Open-source</span></span></li>
-					<li><span class="icon fa-desktop"><span class="label">GitHub</span></span></li>
-				</ul>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper">
-				<div class="inner alt">
-					<section class="spotlight">
-						<div class="image"><img src="images/screen01.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Full Play Services compatibility</h3>
-                                                        <p>Our ROM has built-in microG free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries. <br> This enables you to use every Google service you need without keeping another closed-source binary blob in your Android system.</p>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/screen02.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Native F-Droid support</h3>
-							<p>LineageOS for microG comes with F-Droid already installed. You can use it to access plenty of FOSS applications or even a Play Store bridge repository like <a href='https://github.com/NoMore201/playmaker'>Playmaker</a> or <a href='https://github.com/matlink/gplayweb'>GPlayWeb</a>.</p>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/screen03.jpg" alt="" /></div>
-						<div class="content">
-							<h3>OTA updates</h3>
-							<p>We ship OTA updates from upstream LineageOS every day. In this way you always receive new features and security updates just few hours after they are released mainline.</p>
-						</div>
-					</section>
-					<section class="special">
-						<ul class="icons labeled">
-							<li><span class="icon fa-refresh"><span class="label">OTA updates every day</span></span></li>
-							<li><span class="icon fa-cloud"><span class="label">Compatible with Google Play Services</span></span></li>
-							<li><span class="icon fa-code"><span class="label">Fully open-source and free-software</span></span></li>
-                                                        <li><span class="icon fa-desktop"><span class="label">Source code available on <a href="https://github.com/lineageos4microg">GitHub<a></span></span></li>
-						</ul>
-					</section>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style2 special">
-				<ul class="actions">
-					<li><a href="https://download.lineage.microg.org/" class="button special icon fa-download">Download</a></li>
-					<li><a href="#faq" class="button icon fa-chevron-down scrolly">FAQ</a></li>
-				</ul>
-			</section>
-
-		<!-- Four -->
-			<section id="instructions" class="wrapper">
-				<div class="inner">
-
-					<header class="major">
-						<h2>Installation instructions</h2>
-					</header>
-                    <section>
-                            <p>This ROM has few changes from the official LineageOS ROM, so you can follow the installation guide for your device on the <a href=https://wiki.lineageos.org/devices/>LineageOS wiki</a>.</p>
-                            Before installing the ZIP you should check that it has the correct signature:
-                            <pre><code>keytool -list -printcert -jarfile lineage-microG.zip</code></pre>
-                            the printed fingerprints should match with these ones</p><p>
-                            <pre><code>Certificate fingerprints:
+<html lang="en">
+<head>
+  <meta name="generator" content="Bluefish 2.2.9" >
+  <title>LineageOS for microG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/scroll-to-top.css">
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <link rel="icon" type="image/png" href="/favicon-16x16.png"
+  sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png"
+  sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png"
+  sizes="96x96">
+</head>
+<body id="top">
+  <!-- Header -->
+  <header id="header">
+    <div class="content">
+      <h1><a href="#">LineageOS for microG</a></h1>
+      <p>Access all the Google services<br>
+      without proprietary closed software</p>
+      <ul class="actions">
+        <li>
+          <a href="https://download.lineage.microg.org/" class=
+          "button special icon fa-download">Download</a>
+        </li>
+        <li>
+          <a href="#instructions" class=
+          "button icon fa-chevron-down scrolly">Installation</a>
+        </li>
+        <li>
+          <a href="#faq" class=
+          "button icon fa-chevron-down scrolly">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="image phone">
+      <div class="inner"><img src="images/screen_logo.jpg" alt=
+      ""></div>
+    </div>
+  </header><!-- One -->
+  <section id="one" class="wrapper style2 special">
+    <header class="major">
+      <h2><a href="https://lineageos.org/">LineageOS</a> unofficial
+      fork with built-in<br>
+      <a href="https://microg.org/">microG</a> gapps
+      implementation</h2>
+    </header>
+    <ul class="icons major">
+      <li><span class="icon fa-refresh"><span class=
+      "label">Updates</span></span></li>
+      <li><span class="icon fa-cloud"><span class=
+      "label">GooglePlay</span></span></li>
+      <li><span class="icon fa-code"><span class=
+      "label">Open-source</span></span></li>
+      <li><span class="icon fa-desktop"><span class=
+      "label">GitHub</span></span></li>
+    </ul>
+  </section><!-- Two -->
+  <section id="two" class="wrapper">
+    <div class="inner alt">
+      <section class="spotlight">
+        <div class="image"><img src="images/screen01.jpg" alt=
+        ""></div>
+        <div class="content">
+          <h3>Full Play Services compatibility</h3>
+          <p>Our ROM has built-in microG free-as-in-freedom
+          re-implementation of Google's proprietary Android user
+          space apps and libraries.<br>
+          This enables you to use every Google service you need
+          without keeping another closed-source binary blob in your
+          Android system.</p>
+        </div>
+      </section>
+      <section class="spotlight">
+        <div class="image"><img src="images/screen02.jpg" alt=
+        ""></div>
+        <div class="content">
+          <h3>Native F-Droid support</h3>
+          <p>LineageOS for microG comes with F-Droid already
+          installed. You can use it to access plenty of FOSS
+          applications or even a Play Store bridge repository like
+          <a href=
+          'https://github.com/NoMore201/playmaker'>Playmaker</a> or
+          <a href=
+          'https://github.com/matlink/gplayweb'>GPlayWeb</a>.</p>
+        </div>
+      </section>
+      <section class="spotlight">
+        <div class="image"><img src="images/screen03.jpg" alt=
+        ""></div>
+        <div class="content">
+          <h3>OTA updates</h3>
+          <p>We ship OTA updates from upstream LineageOS every day.
+          In this way you always receive new features and security
+          updates just few hours after they are released
+          mainline.</p>
+        </div>
+      </section>
+      <section class="special">
+        <ul class="icons labeled">
+          <li><span class="icon fa-refresh"><span class="label">OTA
+          updates every day</span></span></li>
+          <li><span class="icon fa-cloud"><span class=
+          "label">Compatible with Google Play
+          Services</span></span></li>
+          <li><span class="icon fa-code"><span class="label">Fully
+          open-source and free-software</span></span></li>
+          <li><span class="icon fa-desktop"><span class=
+          "label">Source code available on <a href=
+          "https://github.com/lineageos4microg">GitHub</a></span></span></li>
+        </ul>
+      </section>
+    </div>
+  </section><!-- Three -->
+  <section id="three" class="wrapper style2 special">
+    <ul class="actions">
+      <li>
+        <a href="https://download.lineage.microg.org/" class=
+        "button special icon fa-download">Download</a>
+      </li>
+      <li>
+        <a href="#faq" class=
+        "button icon fa-chevron-down scrolly">FAQ</a>
+      </li>
+    </ul>
+  </section><!-- Four -->
+  <section id="instructions" class="wrapper">
+    <div class="inner">
+      <header class="major">
+        <h2>Installation instructions</h2>
+      </header>
+      <section>
+        <p>This ROM has few changes from the official LineageOS
+        ROM, so you can follow the installation guide for your
+        device on the <a href=
+        "https://wiki.lineageos.org/devices/">LineageOS
+        wiki</a>.</p>Before installing the ZIP you should check
+        that it has the correct signature:
+        <pre>
+        <code>keytool -list -printcert -jarfile lineage-microG.zip</code></pre>
+        <p>the printed fingerprints should match with these
+        ones</p>
+        <pre><code>Certificate fingerprints:
 MD5:    54:73:70:C6:4B:FE:31:88:ED:18:F5:DF:1E:08:EB:19
 SHA1:   C1:BE:BA:F7:9A:57:74:B7:5B:82:D5:0A:36:60:24:99:00:98:5D:C7
 SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
-        58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0</code></pre></p>
-                    </section>
-					<section>
-						<h3>Migration from LineageOS</h3>
-						    <p>Our ROM and LineageOS use different signing keys, so you can't flash our ROM on top of the official LineageOS; however, the procedure needed to migrate from the official LineageOS is very simple.</p>
-					</section>
-                    <section>
-                        <h4>Clean install = wipe data and installed apps</h4>
-                            <p>If you don't care about losing your current data just reboot into recovery, wipe Data, Cache and Dalvik (perform a "Factory reset") and, without rebooting, install LineageOS for microG.</p>
-                    </section>
-                    <section>
-                        <h4>Dirty install = keep data and installed apps</h4>
-                            <p>If you instead don't want to lose your current data, you can use our <a href=https://download.microg.org/extra>migration ZIP</a>, that replaces the LineageOS' keys with ours.
-                            However, if you have installed unofficial builds of:
-                            <ul>
-                                <li>F-Droid or F-Droid Privileged Extension</li>
-                                <li>microG's apps (GmsCore, GsfProxy, FakeStore and mapsv1 API)</li>
-                                <li>MozillaNlpBackend</li>
-                                <li>NominatimNlpBackend</li>
-                            </ul>
-                            you have to uninstall them before the ROM migration. You also have to uninstall the GApps if you have previously installed them.</p>
-                            <p>Finally download <a href=https://download.microg.org/extra>the migration ZIP</a> and <a href=https://download.lineage.microg.org/>a build of LineageOS for microG</a> (make sure the ZIP you're installing is newer than the current installed ROM, if it is not, wait for the next build), reboot in recovery, install the migration ZIP and, without rebooting, install LineageOS for microG.</p>
-                    </section>
-					<header class="major">
-						<h2>Post-install</h2>
-					</header>
-                    <section>
-                        <p>First, open the "microG Settings" app and check if everything is OK in the "Self-Check" section. The UnifiedNlp section will have some issues: that's normal, we haven't configured it yet.</p>
-                    </section>
-					<section>
-						<h3>UnifiedNlp</h3>
-                            <p>UnifiedNlp is the microG Network Location Provider, which provides the current location of the device without the use of the GPS. While Google's NLP can only use Google's servers for positioning, UnifiedNlp obtains the geolocation through different plugins, which interface to different services.</p>
-                            <p>By default there are two plugins installed:
-                            <ul>
-                                <li><a href=https://f-droid.org/packages/org.microg.nlp.backend.ichnaea/>MozillaNlpBackend</a>, which uses the <a href=https://location.services.mozilla.com/>Mozilla Location Service</a> (online)</li>
-                                <li><a href=https://f-droid.org/packages/org.microg.nlp.backend.nominatim/>NominatimNlpBackend</a>, which uses MapQuest's Nominatim service (based on OpenStreetMap) for geocoding (online)</li>
-                            </ul>
-                            If you want to use these plugins, go to microG Settings -> UnifiedNlp Settings, configure and enable both.</p>
-                            <p>If you instead want different plugins (like the <a href=https://f-droid.org/packages/org.fitchfamily.android.gsmlocation/>LocalGsmNlpBackend</a>, which uses a local offline database of the GSM towers to obtain the location) you can download them in F-Droid and enable them in the same way.</p>
-                            <p>Reboot and check whether UnifiedNlp is correctly set up in the "Self-Check" section of the "microG Settings" app.</p>
-					</section>
-                    <section>
-                        <h3>F-Droid</h3>
-                            <p>You should add microG's repository to F-Droid, so that you can easily update microG's packages.
-                            On your device, follow <a href=https://microg.org/fdroid.html>this link</a> and open microG's F-Droid link in F-Droid (or scan the QR code) to add the repository.</p>
-                            <p>Moreover, you have the F-Droid Privileged Extension installed by default, why not use it? To make a good use of it go to the F-Droid Settings and enable auto updates.</p>
-					</section>
-                    <section>
-                        <h3>Google Cloud Messaging</h3>
-                            <p>Many apps rely on the Google Cloud Messaging, a Google proprietary system to push notifications to your device. This feature is implemented in microG but, as not every user requires it, is disabled by default. If you need it, enable the "Google Device registration" and the "Google Cloud Messaging" features in the "microG Settings" app.</p>
-					</section>
-                    <section>
-                        <h3>Weather service</h3>
-                            <p>If you want the weather features of LineageOS (like in the lock screen or in the cLock widget) you have to download a weather provider from <a href=https://download.lineageos.org/extras>here</a>. Choose your favorite one, install it and configure it in cLock (or in Settings &#8594; Apps &#8594; Gear icon &#8594; Weather).</p>
-                            <p>If you don't want to enable "Unknown sources" you can also import the <a href=https://nomore.ovh/>PlayMaker demo</a> repository in F-Droid (by adding <a href=https://fdroid.nomore.ovh/>this</a> URL to F-Droid) and download it from there.</p>
-					</section>
-                    <section>
-                        <h3>SU (root)</h3>
-                            <p>Our ROM doesn't include root by deafult for security reasons, but you can easily install it: go <a href=https://download.lineageos.org/extras>here</a>, download the appropriate ZIP and install it from the recovery.</p>
-					</section>
-                                        <!-- Three -->
-						</ul>
-					</section>
-				</div>
-                           </section>
-                           <section id="three" class="wrapper style2 special">
-                                <ul class="actions">
-                                        <li><a href="https://download.lineage.microg.org/" class="button special icon fa-download">Download</a></li>
-                                </ul>
-                           </section>
-       		           <section id="faq" class="wrapper">
-                                <div class="inner">
-                    <header class="major">
-						<h2>FAQ</h2>
-					</header>
-                        <p><b>Why all of this? Isn't <a href=http://opengapps.org/>OpenGApps</a> free software?</b><br>
-                        Yes and no, the name "OpenGApps" is misleading. While OpenGApps <a href=https://github.com/opengapps>uses free software to retrieve and bundle the GApps</a>, the apps themselves are not free software, they are in fact the same Google Apps you find on a new phone.</p>
-
-                        <p><b>Why should I use microG instead of the standard Google Play Services?</b></br>
-                        First of all, freedom. I can't explain here why free software is so important (this is a FAQ, not a 200 pages manual), but if you're interested you can start by reading <a href=https://en.wikipedia.org/wiki/Free_software>this</a>.<br>
-                        Second, the Play Services are very expensive in terms of resources, they drain lots of battery and they use lots of space, while microG requires much less resources. To give you an idea, the smallest possible package of OpenGApps ("Pico Package") on ARM 7.1 is ~125 MB, while the full microG suite (GmsCore, GsfProxy, FakeStore, MozillaNlpBackend and NominatimNlpBackend) is ~4 MB.</p>
-
-                        <p><b>Isn't Android free software? Can't I just install LineageOS without both GApps and microG?</b><br>
-                        Android is based on the AOSP project, which is free software. However many common features (like the maps integrations or the push notifications) are handled by the proprietary GApps, generally by the Google Play Services. You can use LineageOS without GApps/microG, but you will probably miss something.</p>
-
-                        <p><b>Which is the current status of microG? Which APIs are already implemented?</b><br>
-                        See <a href=https://github.com/microg/android_packages_apps_GmsCore/wiki/Implementation-Status>here</a>.</p>
-
-                        <p><b>Why do we need a custom build of LineageOS to have microG? Can't I install microG on the official LineageOS?</b><br>
-                        MicroG requires a patch called "signature spoofing", which allows the microG's apps to spoof themselves as Google Apps. LineageOS' developers <a href=https://review.lineageos.org/#/c/64967/>refused</a> (<a href=https://review.lineageos.org/#/c/65366/>multiple times</a>) to include the patch, forcing us to fork their project.</p>
-
-                        <p><b>Wait, on their <a href=https://wiki.lineageos.org/faq.html#can-you-enable-signature-spoofing>FAQ page</a> I see that they don't want to include the patch for security reasons. Is this ROM unsafe?</b><br>
-                        No. LineageOS' developers hides behind the "security reasons" shield, but in reality they don't care enough about the freedom of their users to risk to upset Google by giving them an alternative to the Play Services.<br>
-                        The signature spoofing could be an unsafe feature only if the user blindly gives any permission to any app, as this permission can't be obtained automatically by the apps.<br>
-                        Moreover, to further strengthen the security of our ROM, we modified the signature spoofing permission so that only system privileged apps can obtain it, and no security threat is posed to our users.</p>
-
-                        <p><b>Do you use test keys?</b><br>
-                        Heck, no! We sign all our builds with our own private keys.</p>
-
-                        <p><b>Do you offer OTA updates?</b><br>
-                        Yes, once a day.</p>
-
-                        <p><b>Do you offer delta updates?</b><br>
-                        Not currently, but it can be done if there's real demand.</p>
-
-                        <p><b>Can I install apps from the Play Store on this ROM?</b><br>
-                        F-Droid is included in our ROM, so you can freely download all the FOSS apps on their repositories.<br>
-                        However, if you need apps which are available only on the Play Store, you're free to host your personal instance of <a href=https://github.com/NoMore201/playmaker>PlayMaker</a> (see <a href=https://nomore.ovh>this demo</a>) or <a href=https://github.com/matlink/gplayweb>GPlayWeb</a> and connect it to your F-Droid client,
-                        Playmaker will let you download apps from the Play Store and install them via F-Droid.
-                        Another solution is to use a local app, like <a href=https://f-droid.org/packages/com.github.yeriomin.yalpstore/>Yalp Store</a>.</p>
-
-                        <p><b>Do I have to enable "Unknown sources" to install apps in F-Droid?</b><br>
-                        Our ROM includes "F-Droid Privileged Extension", which allows F-Droid to install and update apps without the need of user interaction or the unsafe "Unknown sources" option.</p>
-
-                        <p><b>Can you add support for my device? It is officially supported by LineageOS</b><br>
-                        Yes, no problem, send us an email.</p>
-
-                        <p><b>Can you add support for my device? It is not supported by LineageOS though...</b><br>
-                        No, I'm sorry.</p>
-
-                        <p><b>I don't trust your build, I want to build it myself!</b><br>
-                        No problem! Our builds are done with <a href=https://github.com/lineageos4microg/docker-lineage-cicd>this Docker image</a>, feel free to build it yourself.</p>
-
-                        <p><b>I am running a custom build of LineageOS, but yours is way cooler! How can I migrate to it without losing my data?</b><br>
-                        Replace the LineageOS official keys in our <a href=https://download.microg.org/extra>migration ZIP</a> with your keys (or follow the suggestions in the <a href=https://wiki.lineageos.org/signing_builds.html#using-a-script>LineageOS migration guide</a>).</p>
-                </section>
-                <a href='#' class='scroll-to-top'></a>
-		<!-- Footer -->
-			<footer id="footer">
-                          <!--
-				<ul class="icons">
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-				</ul>
-                          -->
-				<p class="copyright">&copy; LineageOS for microG. Website credits: <a href="http://html5up.net">HTML5 UP</a></p>
-			</footer>
-
-                                <!-- Scripts -->
-                                <script src="assets/js/jquery.min.js"></script>
-                                <script src="assets/js/jquery.scrolly.min.js"></script>
-                                <script src="assets/js/skel.min.js"></script>
-                                <script src="assets/js/util.js"></script>
-                                <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-                                <script src="assets/js/main.js"></script>
-                                <script src="assets/js/scroll-to-top.js"></script>
-                                <!-- Scroll-to-top license:
+        58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0</code></pre>
+      </section>
+      <section>
+        <h3>Migration from LineageOS</h3>
+        <p>Our ROM and LineageOS use different signing keys, so you
+        can't flash our ROM on top of the official LineageOS;
+        however, the procedure needed to migrate from the official
+        LineageOS is very simple.</p>
+      </section>
+      <section>
+        <h4>Clean install (wipe data and installed apps)</h4>
+        <p>If you don't care about losing your current data just
+        reboot into recovery, wipe Data, Cache and Dalvik (perform
+        a "Factory reset") and, without rebooting, install
+        LineageOS for microG.</p>
+      </section>
+      <section>
+        <h4>Dirty install (keep data and installed apps)</h4>
+        <p>If you instead don't want to lose your current data, you
+        can use our <a href=
+        "https://download.lineage.microg.org/extra">migration
+        ZIP</a>, that replaces the LineageOS' keys with ours.
+        However, if you have installed unofficial builds of:</p>
+        <ul>
+          <li>F-Droid or F-Droid Privileged Extension</li>
+          <li>microG's apps (GmsCore, GsfProxy, FakeStore and
+          mapsv1 API)</li>
+          <li>MozillaNlpBackend</li>
+          <li>NominatimNlpBackend</li>
+        </ul>
+        <p>you have to uninstall them before the ROM migration. You
+        also have to uninstall the GApps if you have previously
+        installed them.</p>
+        <p>Finally download <a href=
+        "https://download.lineage.microg.org/extra">the migration
+        ZIP</a> and <a href=
+        "https://download.lineage.microg.org/">a build of LineageOS
+        for microG</a> (make sure the ZIP you're installing is
+        newer than the current installed ROM, if it is not, wait
+        for the next build), reboot in recovery, install the
+        migration ZIP and, without rebooting, install LineageOS for
+        microG.</p>
+      </section>
+      <header class="major">
+        <h2>Post-install</h2>
+      </header>
+      <section>
+        <p>First, open the "microG Settings" app and check if
+        everything is OK in the "Self-Check" section; you will
+        probably have to give microG some permissions, like
+        location and file access. The UnifiedNlp section will have
+        some issues: that's normal, we haven't configured it
+        yet.</p>
+      </section>
+      <section>
+        <h3>UnifiedNlp</h3>
+        <p>UnifiedNlp is the microG Network Location Provider,
+        which provides the current location of the device without
+        the use of the GPS. While Google's NLP can only use
+        Google's servers for positioning, UnifiedNlp obtains the
+        geolocation through different plugins, which interface to
+        different services.</p>
+        <p>By default there are two plugins installed:</p>
+        <ul>
+          <li>
+            <a href=
+            "https://f-droid.org/packages/org.microg.nlp.backend.ichnaea/">
+            MozillaNlpBackend</a>, which uses the <a href=
+            "https://location.services.mozilla.com/">Mozilla
+            Location Service</a> (online)
+          </li>
+          <li>
+            <a href=
+            "https://f-droid.org/packages/org.microg.nlp.backend.nominatim/">
+            NominatimNlpBackend</a>, which uses MapQuest's
+            Nominatim service (based on OpenStreetMap) for
+            geocoding (online)
+          </li>
+        </ul>
+        <p>If you want to use these plugins, go to microG Settings
+        -&gt; UnifiedNlp Settings, configure and enable both.</p>
+        <p>If you instead want different plugins (like the <a href=
+        "https://f-droid.org/packages/org.fitchfamily.android.gsmlocation/">
+        LocalGsmNlpBackend</a>, which uses a local offline database
+        of the GSM towers to obtain the location) you can download
+        them in F-Droid and enable them in the same way.</p>
+        <p>Reboot and check whether UnifiedNlp is correctly set up
+        in the "Self-Check" section of the "microG Settings"
+        app.</p>
+      </section>
+      <section>
+        <h3>F-Droid</h3>
+        <p>You should add microG's repository to F-Droid, so that
+        you can easily update microG's packages. On your device,
+        follow <a href="https://microg.org/fdroid.html">this
+        link</a> and open microG's F-Droid link in F-Droid (or scan
+        the QR code) to add the repository.</p>
+        <p>Moreover, you have the F-Droid Privileged Extension
+        installed by default, why not use it? To make a good use of
+        it go to the F-Droid Settings and enable auto updates.</p>
+      </section>
+      <section>
+        <h3>Google Cloud Messaging</h3>
+        <p>Many apps rely on the Google Cloud Messaging, a Google
+        proprietary system to push notifications to your device.
+        This feature is implemented in microG but, as not every
+        user requires it, is disabled by default. If you need it,
+        enable the "Google Device registration" and the "Google
+        Cloud Messaging" features in the "microG Settings" app.</p>
+      </section>
+      <section>
+        <h3>Weather service</h3>
+        <p>If you want the weather features of LineageOS (like in
+        the lock screen or in the cLock widget) you have to
+        download a weather provider from <a href=
+        "https://download.lineageos.org/extras">here</a>. Choose
+        your favorite one, install it and configure it in cLock (or
+        in Settings → Apps → Gear icon → Weather).</p>
+        <p>If you don't want to enable "Unknown sources" you can
+        also import the <a href="https://nomore.ovh/">PlayMaker
+        demo</a> repository in F-Droid (by adding <a href=
+        "https://fdroid.nomore.ovh/">this</a> URL to F-Droid) and
+        download it from there.</p>
+      </section>
+      <section>
+        <h3>SU (root)</h3>
+        <p>Our ROM doesn't include root by deafult for security
+        reasons, but you can easily install it: go <a href=
+        "https://download.lineageos.org/extras">here</a>, download
+        the appropriate ZIP and install it from the recovery.</p>
+      </section><!-- Five -->
+    </div>
+  </section>
+  <section id="five" class="wrapper style2 special">
+    <ul class="actions">
+      <li>
+        <a href="https://download.lineage.microg.org/" class=
+        "button special icon fa-download">Download</a>
+      </li>
+    </ul>
+  </section>
+  <section id="faq" class="wrapper">
+    <div class="inner">
+      <header class="major">
+        <h2>FAQ</h2>
+      </header>
+      <p><b>Why all of this? Isn't <a href=
+      "http://opengapps.org/">OpenGApps</a> free software?</b><br>
+      Yes and no, the name "OpenGApps" is misleading. While
+      OpenGApps <a href="https://github.com/opengapps">uses free
+      software to retrieve and bundle the GApps</a>, the apps
+      themselves are not free software, they are in fact the same
+      Google Apps you find on a new phone.</p>
+      <p><b>Why should I use microG instead of the standard Google
+      Play Services?</b><br>
+      First of all, freedom. I can't explain here why free software
+      is so important (this is a FAQ, not a 200 pages manual), but
+      if you're interested you can start by reading <a href=
+      "https://en.wikipedia.org/wiki/Free_software">this</a>.<br>
+      Second, the Play Services are very expensive in terms of
+      resources, they drain lots of battery and they use lots of
+      space, while microG requires much less resources. To give you
+      an idea, the smallest possible package of OpenGApps ("Pico
+      Package") on ARM 7.1 is ~125 MB, while the full microG suite
+      (GmsCore, GsfProxy, FakeStore, MozillaNlpBackend and
+      NominatimNlpBackend) is ~4 MB.</p>
+      <p><b>Isn't Android free software? Can't I just install
+      LineageOS without both GApps and microG?</b><br>
+      Android is based on the AOSP project, which is free software.
+      However many common features (like the maps integrations or
+      the push notifications) are handled by the proprietary GApps,
+      generally by the Google Play Services. You can use LineageOS
+      without GApps/microG, but you will probably miss
+      something.</p>
+      <p><b>Is LineageOS for microG completely free software?</b><br>
+      Unfortunately no, like LineageOS it still has some non-free
+      components. See the <a href=
+      "https://www.replicant.us">Replicant</a> project for more
+      informations.</p>
+      <p><b>Which is the current status of microG? Which APIs are
+      already implemented?</b><br>
+      See <a href=
+      "https://github.com/microg/android_packages_apps_GmsCore/wiki/Implementation-Status">
+      here</a>.</p>
+      <p><b>Why do we need a custom build of LineageOS to have
+      microG? Can't I install microG on the official
+      LineageOS?</b><br>
+      MicroG requires a patch called "signature spoofing", which
+      allows the microG's apps to spoof themselves as Google Apps.
+      LineageOS' developers <a href=
+      "https://review.lineageos.org/#/c/64967/">refused</a>
+      (<a href="https://review.lineageos.org/#/c/65366/">multiple
+      times</a>) to include the patch, forcing us to fork their
+      project.</p>
+      <p><b>Wait, on their <a href=
+      "https://wiki.lineageos.org/faq.html#can-you-enable-signature-spoofing">
+      FAQ page</a> I see that they don't want to include the patch
+      for security reasons. Is this ROM unsafe?</b><br>
+      No. LineageOS' developers hide behind the "security reasons"
+      shield, but in reality they don't care enough about the
+      freedom of their users to risk to upset Google by giving them
+      an alternative to the Play Services.<br>
+      The signature spoofing could be an unsafe feature only if the
+      user blindly gives any permission to any app, as this
+      permission can't be obtained automatically by the apps.<br>
+      Moreover, to further strengthen the security of our ROM, we
+      modified the signature spoofing permission so that only
+      system privileged apps can obtain it, and no security threat
+      is posed to our users.</p>
+      <p><b>Do you use test keys?</b><br>
+      Heck, no! We sign all our builds with our own private
+      keys.</p>
+      <p><b>Do you offer OTA updates?</b><br>
+      Yes, once a day.</p>
+      <p><b>Do you offer delta updates?</b><br>
+      Not currently, but it can be done if there's real demand.</p>
+      <p><b>Can I install apps from the Play Store on this
+      ROM?</b><br>
+      F-Droid is included in our ROM, so you can freely download
+      all the FOSS apps on their repositories.<br>
+      However, if you need apps which are available only on the
+      Play Store, you're free to host your personal instance of
+      <a href=
+      "https://github.com/NoMore201/playmaker">PlayMaker</a> (see
+      <a href="https://nomore.ovh">this demo</a>) or <a href=
+      "https://github.com/matlink/gplayweb">GPlayWeb</a> and
+      connect it to your F-Droid client, Playmaker will let you
+      download apps from the Play Store and install them via
+      F-Droid. Another solution is to use a local app, like
+      <a href="https://f-droid.org/packages/com.github.yeriomin.yalpstore/">
+      Yalp Store</a>.</p>
+      <p><b>Do I have to enable "Unknown sources" to install apps
+      in F-Droid?</b><br>
+      Our ROM includes "F-Droid Privileged Extension", which allows
+      F-Droid to install and update apps without the need of user
+      interaction or the unsafe "Unknown sources" option.</p>
+      <p><b>Can you add support for my device? It is officially
+      supported by LineageOS</b><br>
+      Yes, no problem, send us an email.</p>
+      <p><b>Can you add support for my device? It is not supported
+      by LineageOS though...</b><br>
+      No, I'm sorry.</p>
+      <p><b>I don't trust your build, I want to build it
+      myself!</b><br>
+      No problem! Our builds are done with <a href=
+      "https://github.com/lineageos4microg/docker-lineage-cicd">this
+      Docker image</a>, feel free to build it yourself.</p>
+      <p><b>I am running a custom build of LineageOS, but yours is
+      way cooler! How can I migrate to it without losing my
+      data?</b><br>
+      Replace the LineageOS official keys in our <a href=
+      "https://download.lineage.microg.org/extra">migration ZIP</a>
+      with your keys (or follow the suggestions in the <a href=
+      "https://wiki.lineageos.org/signing_builds.html#using-a-script">
+      LineageOS migration guide</a>).</p>
+    </div>
+  </section><a href='#' class='scroll-to-top'></a> <!-- Footer -->
+  <footer id="footer">
+    <p class="copyright">© LineageOS for microG. Website credits:
+    <a href="https://html5up.net">HTML5 UP</a></p>
+  </footer><!-- Scripts -->
+  <script src="assets/js/jquery.min.js">
+  </script> 
+  <script src="assets/js/jquery.scrolly.min.js">
+  </script> 
+  <script src="assets/js/skel.min.js">
+  </script> 
+  <script src="assets/js/util.js">
+  </script> 
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+   
+  <script src="assets/js/main.js">
+  </script> 
+  <script src="assets/js/scroll-to-top.js">
+  </script> <!-- Scroll-to-top license:
                                 Copyright (c) 2017 by Aleksandar Čugurović (https://codepen.io/choogoor/pen/dGpOoW)
                                 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
                                 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
                                 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                                 -->
-        </body>
+</body>
 </html>
