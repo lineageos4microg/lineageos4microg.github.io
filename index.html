@@ -102,16 +102,16 @@
         ""></div>
         <div class="content">
           <h3>OTA updates</h3>
-          <p>We ship OTA updates from upstream LineageOS every day.
-          In this way you always receive new features and security
-          updates just few hours after they are released
+          <p>We ship OTA updates from upstream LineageOS every two
+          days. In this way you always receive new features and
+          security updates just few hours after they are released
           mainline.</p>
         </div>
       </section>
       <section class="special">
         <ul class="icons labeled">
           <li><span class="icon fa-refresh"><span class="label">OTA
-          updates every day</span></span></li>
+          updates every two days</span></span></li>
           <li><span class="icon fa-cloud"><span class=
           "label">Compatible with Google Play
           Services</span></span></li>
@@ -277,7 +277,7 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
         <p>If you don't want to enable "Unknown sources" you can
         also import the <a href="https://nomore.ovh/">PlayMaker
         demo</a> repository in F-Droid (by adding <a href=
-        "https://fdroid.nomore.ovh/">this</a> URL to F-Droid) and
+        "https://nomore.ovh/fdroid">this</a> URL to F-Droid) and
         download it from there.</p>
       </section>
       <section>
@@ -309,8 +309,8 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       software to retrieve and bundle the GApps</a>, the apps
       themselves are not free software, they are in fact the same
       Google Apps you find on a new phone.</p>
-      <p id="faq2"><b>Why should I use microG instead of the standard Google
-      Play Services?</b><br>
+      <p id="faq2"><b>Why should I use microG instead of the
+      standard Google Play Services?</b><br>
       First of all, freedom. I can't explain here why free software
       is so important (this is a FAQ, not a 200 pages manual), but
       if you're interested you can start by reading <a href=
@@ -322,26 +322,37 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       Package") on ARM 7.1 is ~125 MB, while the full microG suite
       (GmsCore, GsfProxy, FakeStore, MozillaNlpBackend and
       NominatimNlpBackend) is ~4 MB.</p>
-      <p id="faq3"><b>Isn't Android free software? Can't I just install
-      LineageOS without both GApps and microG?</b><br>
+      <p id="faq3"><b>Isn't Android free software? Can't I just
+      install LineageOS without both GApps and microG?</b><br>
       Android is based on the AOSP project, which is free software.
-      However many common features (like the maps integrations or
-      the push notifications) are handled by the proprietary GApps,
-      generally by the Google Play Services. You can use LineageOS
-      without GApps/microG, but you will probably miss
-      something.</p>
-      <p id="faq4"><b>Is LineageOS for microG completely free software?</b><br>
+      However many common features are handled by the proprietary
+      GApps, generally by the Google Play Services. You can use
+      LineageOS without GApps/microG, but you will probably miss
+      something. In particular, you won't have the:</p>
+      <ul>
+        <li>network localization services, which means that you can
+        only use the GPS for the positioning</li>
+        <li>Google Cloud Messaging, so you won't receive any push
+        notification for any app that relies on it</li>
+        <li>the Maps API, which means that any app that uses Google
+        Maps through the Maps API will probably crash</li>
+      </ul>
+      <p>With microG these services (and <a href=
+      "https://github.com/microg/android_packages_apps_GmsCore/wiki/Implementation-Status">
+      many others</a>) are reimplemented.</p>
+      <p id="faq4"><b>Is LineageOS for microG completely free
+      software?</b><br>
       Unfortunately no, like LineageOS it still has some non-free
       components. See the <a href=
       "https://www.replicant.us">Replicant</a> project for more
       informations.</p>
-      <p id="faq5"><b>Which is the current status of microG? Which APIs are
-      already implemented?</b><br>
+      <p id="faq5"><b>Which is the current status of microG? Which
+      APIs are already implemented?</b><br>
       See <a href=
       "https://github.com/microg/android_packages_apps_GmsCore/wiki/Implementation-Status">
       here</a>.</p>
-      <p id="faq6"><b>Why do we need a custom build of LineageOS to have
-      microG? Can't I install microG on the official
+      <p id="faq6"><b>Why do we need a custom build of LineageOS to
+      have microG? Can't I install microG on the official
       LineageOS?</b><br>
       MicroG requires a patch called "signature spoofing", which
       allows the microG's apps to spoof themselves as Google Apps.
@@ -369,11 +380,11 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       Heck, no! We sign all our builds with our own private
       keys.</p>
       <p id="faq9"><b>Do you offer OTA updates?</b><br>
-      Yes, once a day.</p>
+      Yes, once every two days.</p>
       <p id="faq10"><b>Do you offer delta updates?</b><br>
       Not currently, but it can be done if there's real demand.</p>
-      <p id="faq11"><b>Can I install apps from the Play Store on this
-      ROM?</b><br>
+      <p id="faq11"><b>Can I install apps from the Play Store on
+      this ROM?</b><br>
       F-Droid is included in our ROM, so you can freely download
       all the FOSS apps on their repositories.<br>
       However, if you need apps which are available only on the
@@ -387,26 +398,29 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       F-Droid. Another solution is to use a local app, like
       <a href="https://f-droid.org/packages/com.github.yeriomin.yalpstore/">
       Yalp Store</a>.</p>
-      <p id="faq12"><b>Do I have to enable "Unknown sources" to install apps
-      in F-Droid?</b><br>
+      <p id="faq12"><b>Do I have to enable "Unknown sources" to
+      install apps in F-Droid?</b><br>
       Our ROM includes "F-Droid Privileged Extension", which allows
       F-Droid to install and update apps without the need of user
       interaction or the unsafe "Unknown sources" option.</p>
-      <p id="faq13"><b>Can you add support for my device? It is officially
-      supported by LineageOS</b><br>
-      Yes, no problem. We're still setting up everything, we will soon create
-      an XDA thread for the devices requests.</p>
-      <p id="faq14"><b>Can you add support for my device? It is not supported
-      by LineageOS though...</b><br>
+      <p id="faq13"><b>Can you add support for my device? It is
+      officially supported by LineageOS</b><br>
+      Yes, no problem. Ask for it in <a href=
+      "https://forum.xda-developers.com/android/software/lineageos-microg-t3700997">
+      our XDA thread</a> specifying <a href=
+      "https://wiki.lineageos.org/devices/">the codename of your
+      device</a>.</p>
+      <p id="faq14"><b>Can you add support for my device? It is not
+      supported by LineageOS though...</b><br>
       No, I'm sorry.</p>
       <p id="faq15"><b>I don't trust your build, I want to build it
       myself!</b><br>
       No problem! Our builds are done with <a href=
       "https://github.com/lineageos4microg/docker-lineage-cicd">this
       Docker image</a>, feel free to build it yourself.</p>
-      <p id="faq16"><b>I am running a custom build of LineageOS, but yours is
-      way cooler! How can I migrate to it without losing my
-      data?</b><br>
+      <p id="faq16"><b>I am running a custom build of LineageOS,
+      but yours is way cooler! How can I migrate to it without
+      losing my data?</b><br>
       Replace the LineageOS official keys in our <a href=
       "https://download.lineage.microg.org/extra">migration ZIP</a>
       with your keys (or follow the suggestions in the <a href=
