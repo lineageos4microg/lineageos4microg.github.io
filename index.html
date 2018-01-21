@@ -106,16 +106,16 @@
         ""></div>
         <div class="content">
           <h3>OTA updates</h3>
-          <p>We ship OTA updates from upstream LineageOS every two
-          days. In this way you always receive new features and
-          security updates just few hours after they are released
+          <p>We ship OTA updates from upstream LineageOS weekly. In
+          this way you always receive new features and security
+          updates just few days after they are released
           mainline.</p>
         </div>
       </section>
       <section class="special">
         <ul class="icons labeled">
-          <li><span class="icon fa-refresh"><span class="label">OTA
-          updates every two days</span></span></li>
+          <li><span class="icon fa-refresh"><span class=
+          "label">Weekly OTA updates</span></span></li>
           <li><span class="icon fa-cloud"><span class=
           "label">Compatible with Google Play
           Services</span></span></li>
@@ -172,9 +172,8 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       <section>
         <h4>Clean install (wipe data and installed apps)</h4>
         <p>If you don't care about losing your current data just
-        reboot into recovery, wipe Data, Cache and Dalvik (perform
-        a "Factory reset") and, without rebooting, install
-        LineageOS for microG.</p>
+        reboot into recovery, wipe System, Data, Cache and Dalvik
+        and, without rebooting, install LineageOS for microG.</p>
       </section>
       <section>
         <h4>Dirty install (keep data and installed apps)</h4>
@@ -182,7 +181,8 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
         can use our <a href=
         "https://download.lineage.microg.org/extra">migration
         ZIP</a>, that replaces the LineageOS' keys with ours.
-        However, if you have installed unofficial builds of:</p>
+        However, if you have installed <b>unofficial</b> builds
+        of:</p>
         <ul>
           <li>F-Droid or F-Droid Privileged Extension</li>
           <li>microG's apps (GmsCore, GsfProxy, FakeStore and
@@ -362,17 +362,18 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       allows the microG's apps to spoof themselves as Google Apps.
       LineageOS' developers <a href=
       "https://review.lineageos.org/#/c/64967/">refused</a>
-      (<a href="https://review.lineageos.org/#/c/65366/">multiple
-      times</a>) to include the patch, forcing us to fork their
-      project.</p>
+      (<a href=
+      "https://review.lineageos.org/#/c/65366/">multiple</a>
+      <a href="https://review.lineageos.org/#/c/195283/">times</a>)
+      to include the patch, forcing us to fork their project.</p>
       <p id="faq7"><b>Wait, on their <a href=
       "https://wiki.lineageos.org/faq.html#can-you-enable-signature-spoofing">
       FAQ page</a> I see that they don't want to include the patch
       for security reasons. Is this ROM unsafe?</b><br>
-      No. LineageOS' developers hide behind the "security reasons"
-      shield, but in reality they don't care enough about the
-      freedom of their users to risk to upset Google by giving them
-      an alternative to the Play Services.<br>
+      No. LineageOS' developers decided not to include this patch
+      for <a href=
+      "https://review.lineageos.org/#/c/195284/">various
+      reasons</a>.<br>
       The signature spoofing could be an unsafe feature only if the
       user blindly gives any permission to any app, as this
       permission can't be obtained automatically by the apps.<br>
@@ -384,7 +385,7 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       Heck, no! We sign all our builds with our own private
       keys.</p>
       <p id="faq9"><b>Do you offer OTA updates?</b><br>
-      Yes, once every two days.</p>
+      Yes, once a week.</p>
       <p id="faq10"><b>Do you offer delta updates?</b><br>
       Not currently, but it can be done if there's real demand.</p>
       <p id="faq11"><b>Can I install apps from the Play Store on
@@ -409,11 +410,10 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       interaction or the unsafe "Unknown sources" option.</p>
       <p id="faq13"><b>Can you add support for my device? It is
       officially supported by LineageOS</b><br>
-      Yes, no problem. Ask for it in <a href=
-      "https://forum.xda-developers.com/android/software/lineageos-microg-t3700997">
-      our XDA thread</a> specifying <a href=
-      "https://wiki.lineageos.org/devices/">the codename of your
-      device</a>.</p>
+      We already build LineageOS for microG for every device
+      supported by LineageOS. Find your device in our <a href=
+      "https://download.lineage.microg.org/">Downloads
+      page</a>!</p>
       <p id="faq14"><b>Can you add support for my device? It is not
       supported by LineageOS though...</b><br>
       No, I'm sorry.</p>
