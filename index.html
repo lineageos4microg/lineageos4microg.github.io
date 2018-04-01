@@ -169,7 +169,7 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
         58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0</code></pre>
       </section>
       <section>
-        <h3>Migration from LineageOS</h3>
+        <h3 id="migration">Migration from LineageOS</h3>
         <p>Our ROM and LineageOS use different signing keys, so you
         can't flash our ROM on top of the official LineageOS;
         however, the procedure needed to migrate from the official
@@ -208,6 +208,23 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
         for the next build), reboot in recovery, install the
         migration ZIP and, without rebooting, install LineageOS for
         microG.</p>
+      </section>
+      <section>
+        <h3>Upgrade from LineageOS 14.1 to LineageOS 15.1</h3>
+        <p>To upgrade from LineageOS for microG 14.1 to LineageOS
+        for microG 15.1 it is not necessary to wipe your data, just
+        upgrade your TWRP bootloader and flash manually the latest
+        LineageOS for microG 15.1 zip.</p>
+        <p>To upgrade from LineageOS 14.1 to LineageOS for microG
+        15.1, first upgrade your TWRP bootloader, then upgrade to
+        LineageOS 15.1 and finally follow the <a href=
+        "#migration">Migration from LineageOS</a> instructions.</p>
+        <p>To upgrade from an unofficial LineageOS build to
+        LineageOS for microG 15.1, a factory reset is required,
+        otherwise you can <a href=
+        "https://lineage.microg.org/#faq16">create your own
+        migration zip</a>, and follow the <a href=
+        "#migration">Migration from LineageOS</a> instructions.</p>
       </section>
       <header class="major">
         <h2>Post-install</h2>
@@ -436,6 +453,15 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
       with your keys (or follow the suggestions in the <a href=
       "https://wiki.lineageos.org/signing_builds.html#using-a-script">
       LineageOS migration guide</a>).</p>
+    </div>
+  </section><a href='#' class='scroll-to-top'></a> <!-- Footer -->
+  <section id="bugreporting" class="wrapper">
+    <div class="inner">
+      <header class="major">
+        <h2>Where do I report a bug?</h2>
+      </header>
+      <div class="inner"><img src="images/bug_reporting.svg" alt=""
+      width="100%"></div>
     </div>
   </section><a href='#' class='scroll-to-top'></a> <!-- Footer -->
   <footer id="footer">
