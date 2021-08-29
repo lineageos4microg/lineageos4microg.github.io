@@ -210,6 +210,11 @@ SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
         <p>you have to uninstall them before the ROM migration. You
         also have to uninstall the GApps if you have previously
         installed them.</p>
+        <p>Note that if the device is encrypted with FBE things are
+        a bit more difficult: you'll need to extract the script
+        <pre>update-binary</pre> from the migration script zipfile
+        and run it from the current installation via ADB, from root.
+        </p>
         <p>Then, download <a href=
         "https://download.lineage.microg.org/extra">the migration
         ZIP</a> and <a href=
