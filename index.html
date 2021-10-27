@@ -157,19 +157,8 @@
         device on the <a href=
         "https://wiki.lineageos.org/devices/">LineageOS
         wiki</a>.</p>Before installing the ZIP you should check
-        that it has the correct signature. With 14.1 you can use
-        keytool:
-        <pre>
-        <code>keytool -list -printcert -jarfile lineage-microG.zip</code></pre>
-        <p>the printed fingerprints should match with these
-        ones</p>
-        <pre><code>Certificate fingerprints:
-MD5:    54:73:70:C6:4B:FE:31:88:ED:18:F5:DF:1E:08:EB:19
-SHA1:   C1:BE:BA:F7:9A:57:74:B7:5B:82:D5:0A:36:60:24:99:00:98:5D:C7
-SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
-        58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0</code></pre>
-        With 15.1 and 16.0, you have to use a Python script to verify the
-        signature, <a
+        that it has the correct signature. You have to use a Python 
+	script to verify the signature, <a
         href="https://github.com/lineageos4microg/update_verifier">
         available here</a>.
         Install <a href="https://www.python.org/downloads/">Python 3
