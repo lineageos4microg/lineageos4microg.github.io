@@ -155,7 +155,7 @@
         <p>This ROM has few changes from the official LineageOS
         ROM, so you can follow the installation guide for your
         device on the <a href=
-        "https://wiki.lineageos.org/devices/">LineageOS
+        "https://wiki.lineageos.org/install_guides.html">LineageOS
         wiki</a>.</p>Before installing the ZIP you should check
         that it has the correct signature. You have to use a Python 
 	script to verify the signature, <a
@@ -181,13 +181,13 @@
       <section>
         <h4>Dirty install (keep data and installed apps)</h4>
         <p>Our ROM and LineageOS use different signing keys, so you
-        can't flash our ROM on top of the official LineageOS while
-        keeping your data; however, the procedure needed to migrate
-        from the official LineageOS is very simple.</p>
-        <p>You can use our <a href=
-        "https://download.lineage.microg.org/extra">migration
-        ZIP</a>, that replaces the LineageOS' keys with ours.
-        However, if you have installed <b>unofficial</b> builds
+        can't directely flash our ROM on top of the official LineageOS
+        while keeping your data; however, the procedure needed to
+        migrate from the official LineageOS is very simple.</p>
+        <p>Firstly, make sure the ZIP you want to  install is newer
+        than the current installed ROM, if it is not, wait for the
+        next build.</p>
+        <p>If you have installed <b>unofficial</b> builds
         of:</p>
         <ul>
           <li>F-Droid or F-Droid Privileged Extension</li>
@@ -199,15 +199,16 @@
         <p>you have to uninstall them before the ROM migration. You
         also have to uninstall the GApps if you have previously
         installed them.</p>
-        <p>Then, download <a href=
-        "https://download.lineage.microg.org/extra">the migration
-        ZIP</a> and <a href=
-        "https://download.lineage.microg.org/">a build of LineageOS
-        for microG</a> (make sure the ZIP you're installing is
-        newer than the current installed ROM, if it is not, wait
-        for the next build), reboot in recovery, install the
-        migration ZIP and, without rebooting, install LineageOS for
-        microG.</p>
+        <p>Then, depending on your recovery type, two methods 
+        apply:</p>
+        <ul>
+          <li>Lineage recovery: Flash the LineageOS for microG ZIP
+          and confirm flash despite signature mismatch.</li>
+          <li>TWRP recovery: Download and flash <a href=
+          "https://download.lineage.microg.org/extra">the migration
+          ZIP</a> and, without rebooting, flash the LineageOS for
+          microG ZIP.</li>
+        </ul>
       </section>
       <section>
         <h3>Upgrade</h3>
