@@ -6,6 +6,8 @@
 > # <img src="/images/screen_logo.jpg" alt="LineageOS for microG">
 > ### The full Android experience without Google Apps
 
+### This site is 'work-in-progress' and is subject to change at short notice
+
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
 - [The LineageOS Android Distribution](https://lineageos.org/) A free and open-source operating system for various devices, based on the Android mobile platform.
@@ -49,3 +51,6 @@ We build for the same devices as LineageOS using [their list of build targets](h
 We aim to make builds monthly, and we (usually) start a 'build run' starting on the first day of the month. The devices included in a build run are defined by the content of the [LineageOS target list](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) ***at the point the build run starts***. Our monthly build run takes 15-20 days to complete. The progress of the build run is published in [a dedicated matrix room](https://matrix.to/#/#microg-lineage-os-builds:matrix.domainepublic.net)
 
 If builds for any devices fail during a build run, we will try the build again ***after the main build run has completed***. If you do not see a new build for your device when you expect it, please check whether the build failure was reported in the matrix room. If it was, there is no need to report it - we will deal with it! If the failure was not reported in the matrix room, then please report it in [our issue tracker][issue-tracker] or in [the XDA Forums thread](https://xdaforums.com/t/lineageos-for-microg.3700997/)
+
+## Project Sponsor
+Thanks to [SysEleven](https://www.syseleven.de/en/) who are generously providing the cloud computing resources the project uses to make and publish our builds, and to host this site.
