@@ -54,3 +54,8 @@ If builds for any devices fail during a build run, we will try the build again *
 
 ## Project Sponsor
 Thanks to [SysEleven](https://www.syseleven.de/en/) who are generously providing the cloud computing resources the project uses to make and publish our builds, and to host this site.
+
+
+<footer id="footer">
+  <p class="copyright">© LineageOS for microG.</a></p>
+</footer>
