@@ -90,7 +90,18 @@
           <li>The Docker image <a href="https://github.com/lineageos4microg/docker-lineage-cicd#"><code>README.md</code></a> and <a href="https://github.com/lineageos4microg/docker-lineage-cicd/wiki">wiki</a></li>
           </ul></li>
           </ol>
-          </body>
+          <h3 id="build-targets-and-frequency">Build Targets and Frequency</h3>
+          <p>We build for the same devices as LineageOS using <a href="https://github.com/LineageOS/hudson/blob/main/lineage-build-targets">their list of build targets</a> as the input to our build run.</p>
+          <p>We aim to make builds monthly, and we (usually) start a ‘build run’ starting on the first day of the month. The devices included in a build run are defined by the content of the <a href="https://github.com/LineageOS/hudson/blob/main/lineage-build-targets">LineageOS target list</a> <strong><em>at the point the build run starts</em></strong>. Our monthly build run takes 15-20 days to complete. The progress of the build run is published in <a href="https://matrix.to/#/#microg-lineage-os-builds:matrix.domainepublic.net">a dedicated matrix room</a></p>
+          <p>If builds for any devices fail during a build run, we will try the build again <strong><em>after the main build run has completed</em></strong>. If you do not see a new build for your device when you expect it, please check whether the build failure was reported in the matrix room. If it was, there is no need to report it - we will deal with it! If the failure was not reported in the matrix room, then please report it in [our issue tracker][issue-tracker] or in <a href="https://xdaforums.com/t/lineageos-for-microg.3700997/">the XDA Forums thread</a></p>
+          <h3 id="upstreams">Upstreams</h3>
+          <p>The project has two main ’upstream` projects:</p>
+          <ul>
+          <li>LineageOS (<a href="https://lineageos.org/">website</a>, <a href="https://github.com/LineageOS">github repos</a>)</li>
+          <li>MicroG (<a href="https://microg.org/">website</a>, <a href="https://github.com/microg">github repos</a>)</li>
+          </ul>
+          <p>Like LineageOS, the project also uses ’TheMuppets` <a href="https://github.com/TheMuppets/">github</a> and <a href="https://gitlab.com/the-muppets">gitlab</a> repos as the source for device-specific vendor binary blobs.</p>
+          <p>The main work of the project is to integrate the upstream components and build them into the ROM images we make available.</p>
           <h2 id="documentation">Documentation</h2>
           <p>Up to date documentation is available in <a href="https://github.com/lineageos4microg/l4m-wiki/wiki">the project wiki</a></p>
           <ul>
