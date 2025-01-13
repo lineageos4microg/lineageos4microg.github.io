@@ -1,8 +1,7 @@
 <header id="header">
   <div class="content">
     <h1><a href="#">LineageOS for microG</a></h1>
-    <p>The full Android experience<br>
-    without Google Apps</p>
+    <h2>The full Android experience without Google Apps</h2>
     <ul class="actions">
       <p>
       <li>
@@ -12,7 +11,7 @@
       <li>
         <a href="https://liberapay.com/microG/" class=
         "button icon scrolly">
-          <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63;padding-right:0.3em"></i>
+          <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63"></i>
           Donate</a>
       </li>
       <li>
