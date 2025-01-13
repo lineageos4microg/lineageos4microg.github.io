@@ -64,6 +64,14 @@ We aim to make builds monthly, and we (usually) start a 'build run' on the first
 
 If builds for any devices fail during a build run, we will try the build again ***after the main build run has completed***. If you do not see a new build for your device when you expect it, please check whether the build failure was reported in the matrix room. If it was, there is no need to report it - we will deal with it! If the failure was not reported in the matrix room, then please report it in [the `docker-lineage-cicd` project issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues) or in [the XDA Forums thread](https://xdaforums.com/t/lineageos-for-microg.3700997/)
 
+### Project Github repositories
+
+The project has two main public repositories on GitHub:
+-  [`docker-lineage-cicd`]( https://github.com/lineageos4microg/docker-lineage-cicd)
+ The Docker image used by the project to make the regular builds, along with a [`README.md`](https://github.com/lineageos4microg/docker-lineage-cicd#readme) explaining how it can be used. The Docker images is rebuilt and pushed to [DockerHub](https://hub.docker.com/r/lineageos4microg/docker-lineage-cicd/) automatically when changes are pushed to the `master` branch
+- [`android_vendor_partner_gms`](https://github.com/lineageos4microg/android_vendor_partner_gms)
+The pre-built components from MicroG, along with makefiles for easy integration in the Android build system. The pre-built components are pulled automatically from the MicroG releases.
+
 ### Upstreams
 
 The project has two main 'upstream` projects:
