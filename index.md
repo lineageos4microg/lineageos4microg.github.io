@@ -56,6 +56,8 @@ A secondary objective is to make our main build tool available for other project
 
 When LineageOS stop supporting a device, the last LineageOS for MicroG build will be kept available on [our download server](https://download.lineage.microg.org/)
 
+Some builds for devices which were last supported at version `lineage-18.1` can be found on [the Wayback Machine / Internet Archive](https://web.archive.org/web/20240527093848/https://download.lineage.microg.org/archive/)
+
 ### Build Targets and Frequency
 
 We build for the same devices as LineageOS using [their list of build targets](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) as the input to our build run.
