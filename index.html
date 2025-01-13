@@ -126,89 +126,13 @@
       <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Installation#downgrading">Downgrading to an earlier Android version</a></li>
       <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Installation#failed-updates-and-boot-loops">Failed updates and ‘boot loops’</a></li>
       <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Installation#migration-from-lineageos">Migration from LineageOS</a></li>
+      <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Installation#after-installing">After installing</a></li>
       </ul></li>
       <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Troubleshooting-and-Support">Troubleshooting and Support</a></li>
       <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/FAQ">Frequently Asked Questions</a></li>
       <li><a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Backup-Migrate-Downgrade">Backup Migrate Downgrade</a></li>
       </ul>
   </ul>
-        <h2>Post-install</h2>
-      </header>
-      <section>
-        <p>First, open the "microG Settings" app and check if
-        everything is OK in the "Self-Check" section; you will
-        probably have to give microG some permissions, like
-        location and file access. The UnifiedNlp section will have
-        some issues: that's normal, we haven't configured it
-        yet.</p>
-      </section>
-      <section>
-        <h3>UnifiedNlp</h3>
-        <p>UnifiedNlp is the microG Network Location Provider,
-        which provides the current location of the device without
-        the use of the GPS. While Google's NLP can only use
-        Google's servers for positioning, UnifiedNlp obtains the
-        geolocation through different plugins, which interface to
-        different services.</p>
-        <p>By default there are two plugins installed:</p>
-        <ul>
-          <li>
-            <a href=
-            "https://f-droid.org/packages/org.microg.nlp.backend.ichnaea/">
-            MozillaNlpBackend</a>, which uses the <a href=
-            "https://location.services.mozilla.com/">Mozilla
-            Location Service</a> (online)
-          </li>
-          <li>
-            <a href=
-            "https://f-droid.org/packages/org.microg.nlp.backend.nominatim/">
-            NominatimNlpBackend</a>, which uses MapQuest's
-            Nominatim service (based on OpenStreetMap) for
-            geocoding (online)
-          </li>
-        </ul>
-        <p>If you want to use these plugins, go to microG Settings
-        -&gt; UnifiedNlp Settings, configure and enable both.</p>
-        <p>If you instead want different plugins (like the <a href=
-        "https://f-droid.org/packages/org.fitchfamily.android.gsmlocation/">
-        LocalGsmNlpBackend</a>, which uses a local offline database
-        of the GSM towers to obtain the location) you can download
-        them in F-Droid and enable them in the same way.</p>
-        <p>Reboot and check whether UnifiedNlp is correctly set up
-        in the "Self-Check" section of the "microG Settings"
-        app.</p>
-      </section>
-      <section>
-        <h3>F-Droid</h3>
-        <p>You have the F-Droid Privileged Extension
-        installed by default, why not use it? To make a good use of
-        it go to the F-Droid Settings and enable auto updates.</p>
-      </section>
-      <section>
-        <h3>Google Cloud Messaging</h3>
-        <p>Many apps rely on the Google Cloud Messaging, a Google
-        proprietary system to push notifications to your device.
-        This feature is implemented in microG but, as not every
-        user requires it, is disabled by default. If you need it,
-        enable the "Google Device registration" and the "Google
-        Cloud Messaging" features in the "microG Settings" app.</p>
-      </section>
-      <section>
-        <h3>Weather service <i>Only up to LineageOS for microG 16.0</i></h3>
-        <p>If you want the weather features of LineageOS (like in
-        the lock screen or in the cLock widget) you have to
-        download a weather provider from <a href=
-        "https://download.lineageos.org/extras">here</a>. Choose
-        your favorite one, install it and configure it in cLock (or
-        in Settings → Apps → Gear icon → Weather).</p>
-      </section>
-      <section>
-        <h3>SU (root) <i>Only up to LineageOS for microG 16.0</i></h3>
-        <p>Our ROM doesn't include root by default for security
-        reasons, but you can easily install it: go <a href=
-        "https://download.lineageos.org/extras">here</a>, download
-        the appropriate ZIP and install it from the recovery.</p>
-      </section><!-- Five -->
     </div>
   </section>
   <section id="five" class="wrapper style2 special">
