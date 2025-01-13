@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="46cm"
+   height="41cm"
+   viewBox="185 60 903 814"
+   version="1.1"
+   id="svg250"
+   sodipodi:docname="bug_reporting.svg"
+   inkscape:version="0.92.2 2405546, 2018-03-11">
+  <metadata
+     id="metadata256">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs254" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview252"
+     showgrid="false"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="588.85918"
+     inkscape:cy="698.63407"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg250" />
+  <text
+     font-size="45.1556"
+     style="fill:#666666;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="207"
+     y="102"
+     id="text4">
+    <tspan
+       x="207"
+       y="102"
+       id="tspan2"
+       style="fill:#666666;">LineageOS for microG Bug Reporting</tspan>
+  </text>
+  <g
+     id="g20">
+    <rect
+       style="fill: #ffffff"
+       x="462.85"
+       y="163"
+       width="299.3"
+       height="108"
+       id="rect6" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="462.85"
+       y="163"
+       width="299.3"
+       height="108"
+       id="rect8" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="612.5"
+       y="190.417"
+       id="text18">
+      <tspan
+         x="612.5"
+         y="190.417"
+         id="tspan10"
+         style="fill:#999999;">Is the bug relative to microG?</tspan>
+      <tspan
+         x="612.5"
+         y="211.583"
+         id="tspan12"
+         style="fill:#999999;">Does the bug affect one of the</tspan>
+      <tspan
+         x="612.5"
+         y="232.75"
+         id="tspan14"
+         style="fill:#999999;">microG services like: location,</tspan>
+      <tspan
+         x="612.5"
+         y="253.917"
+         id="tspan16"
+         style="fill:#999999;">messaging, push, maps, sign-in?</tspan>
+    </text>
+  </g>
+  <g
+     id="g28">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="614"
+       y1="117"
+       x2="612.891"
+       y2="151.006"
+       id="line22" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="607.894,150.843 612.565,161.001 617.888,151.169 "
+       id="polygon24" />
+    <polygon
+       style="fill:#cccccc;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="607.894,150.843 612.565,161.001 617.888,151.169 "
+       id="polygon26" />
+  </g>
+  <g
+     id="g44">
+    <rect
+       style="fill: #ffffff"
+       x="217"
+       y="342.3"
+       width="281.55"
+       height="108"
+       id="rect30" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="217"
+       y="342.3"
+       width="281.55"
+       height="108"
+       id="rect32" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="357.775"
+       y="369.717"
+       id="text42">
+      <tspan
+         x="357.775"
+         y="369.717"
+         id="tspan34"
+         style="fill:#999999;">Is there something wrong with</tspan>
+      <tspan
+         x="357.775"
+         y="390.883"
+         id="tspan36"
+         style="fill:#999999;">the website? For example</tspan>
+      <tspan
+         x="357.775"
+         y="412.05"
+         id="tspan38"
+         style="fill:#999999;">some information is wrong or</tspan>
+      <tspan
+         x="357.775"
+         y="433.217"
+         id="tspan40"
+         style="fill:#999999;">missing?</tspan>
+    </text>
+  </g>
+  <g
+     id="g56">
+    <rect
+       style="fill: #ffffff"
+       x="187"
+       y="552.75"
+       width="127"
+       height="107.3"
+       id="rect46" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="187"
+       y="552.75"
+       width="127"
+       height="107.3"
+       id="rect48" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="250.5"
+       y="600.983"
+       id="text54">
+      <tspan
+         x="250.5"
+         y="600.983"
+         id="tspan50"
+         style="fill:#999999;">Report to</tspan>
+      <tspan
+         x="250.5"
+         y="622.15"
+         id="tspan52"
+         style="fill:#999999;">LineageOS</tspan>
+    </text>
+  </g>
+  <text
+     font-size="12.7998"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="250.5"
+     y="606.4"
+     id="text60">
+    <tspan
+       x="250.5"
+       y="606.4"
+       id="tspan58" />
+  </text>
+  <g
+     id="g74">
+    <rect
+       style="fill: #ffffff"
+       x="404.45"
+       y="554.05"
+       width="127.95"
+       height="107.3"
+       id="rect62" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="404.45"
+       y="554.05"
+       width="127.95"
+       height="107.3"
+       id="rect64" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="468.425"
+       y="591.7"
+       id="text72">
+      <tspan
+         x="468.425"
+         y="591.7"
+         id="tspan66"
+         style="fill:#999999;">Report to</tspan>
+      <tspan
+         x="468.425"
+         y="612.867"
+         id="tspan68"
+         style="fill:#999999;">l4m_website</tspan>
+      <tspan
+         x="468.425"
+         y="634.033"
+         id="tspan70"
+         style="fill:#999999;">GitHub repo</tspan>
+    </text>
+  </g>
+  <text
+     font-size="12.7998"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="874.9"
+     y="396.3"
+     id="text78">
+    <tspan
+       x="874.9"
+       y="396.3"
+       id="tspan76" />
+  </text>
+  <g
+     id="g92">
+    <rect
+       style="fill: #ffffff"
+       x="709"
+       y="344.05"
+       width="281"
+       height="108"
+       id="rect80" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke-width:2;stroke:#666666"
+       x="709"
+       y="344.05"
+       width="281"
+       height="108"
+       id="rect82" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="849.5"
+       y="382.05"
+       id="text90">
+      <tspan
+         x="849.5"
+         y="382.05"
+         id="tspan84"
+         style="fill:#999999;">Are the relative apps e.g.</tspan>
+      <tspan
+         x="849.5"
+         y="403.217"
+         id="tspan86"
+         style="fill:#999999;">microG settings, location</tspan>
+      <tspan
+         x="849.5"
+         y="424.383"
+         id="tspan88"
+         style="fill:#999999;">backends present?</tspan>
+    </text>
+  </g>
+  <g
+     id="g106">
+    <rect
+       style="fill: #ffffff"
+       x="580.975"
+       y="556.05"
+       width="321.25"
+       height="108"
+       id="rect94" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="580.975"
+       y="556.05"
+       width="321.25"
+       height="108"
+       id="rect96" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="741.6"
+       y="594.05"
+       id="text104">
+      <tspan
+         x="741.6"
+         y="594.05"
+         id="tspan98"
+         style="fill:#999999;">Is the bug relative to some</tspan>
+      <tspan
+         x="741.6"
+         y="615.217"
+         id="tspan100"
+         style="fill:#999999;">of the preinstalled APKs?</tspan>
+      <tspan
+         x="741.6"
+         y="636.383"
+         id="tspan102"
+         style="fill:#999999;">Do you want to propose new APKs?</tspan>
+    </text>
+  </g>
+  <g
+     id="g120">
+    <rect
+       style="fill: #ffffff"
+       x="516.9"
+       y="765.05"
+       width="186.2"
+       height="107.3"
+       id="rect108" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="516.9"
+       y="765.05"
+       width="186.2"
+       height="107.3"
+       id="rect110" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="610"
+       y="802.7"
+       id="text118">
+      <tspan
+         x="610"
+         y="802.7"
+         id="tspan112"
+         style="fill:#999999;">Report to</tspan>
+      <tspan
+         x="610"
+         y="823.867"
+         id="tspan114"
+         style="fill:#999999;">docker-lineage-cicd</tspan>
+      <tspan
+         x="610"
+         y="845.033"
+         id="tspan116"
+         style="fill:#999999;">GitHub repo</tspan>
+    </text>
+  </g>
+  <g
+     id="g134">
+    <rect
+       style="fill: #ffffff"
+       x="776.4"
+       y="764.05"
+       width="186.2"
+       height="107.3"
+       id="rect122" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="776.4"
+       y="764.05"
+       width="186.2"
+       height="107.3"
+       id="rect124" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="869.5"
+       y="801.7"
+       id="text132">
+      <tspan
+         x="869.5"
+         y="801.7"
+         id="tspan126"
+         style="fill:#999999;">Report to</tspan>
+      <tspan
+         x="869.5"
+         y="822.867"
+         id="tspan128"
+         style="fill:#999999;">prebuiltapks</tspan>
+      <tspan
+         x="869.5"
+         y="844.033"
+         id="tspan130"
+         style="fill:#999999;">GitHub repo</tspan>
+    </text>
+  </g>
+  <g
+     id="g146">
+    <rect
+       style="fill: #ffffff"
+       x="962.15"
+       y="556.05"
+       width="124.85"
+       height="107.3"
+       id="rect136" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0;stroke-width:2;stroke:#808080"
+       x="962.15"
+       y="556.05"
+       width="124.85"
+       height="107.3"
+       id="rect138" />
+    <text
+       font-size="16.9331"
+       style="fill:#999999;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal;"
+       x="1024.58"
+       y="604.283"
+       id="text144">
+      <tspan
+         x="1024.58"
+         y="604.283"
+         id="tspan140"
+         style="fill:#999999;">Report to</tspan>
+      <tspan
+         x="1024.58"
+         y="625.45"
+         id="tspan142"
+         style="fill:#999999;">microG</tspan>
+    </text>
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="196.747"
+     y="808.522"
+     id="text152">
+    <tspan
+       x="196.747"
+       y="808.522"
+       id="tspan148"
+       style="fill:#808080;">If you have any doubts,</tspan>
+    <tspan
+       x="196.747"
+       y="836.745"
+       id="tspan150"
+       style="fill:#808080;">post in the XDA thread.</tspan>
+  </text>
+  <g
+     id="g160">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="539.5"
+       y1="283"
+       x2="405.433"
+       y2="326.543"
+       id="line154" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="403.888,321.787 395.922,329.632 406.977,331.298 "
+       id="polygon156" />
+    <polygon
+       style="fill:#e6e6e6;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="403.888,321.787 395.922,329.632 406.977,331.298 "
+       id="polygon158" />
+  </g>
+  <g
+     id="g168">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="686.153"
+       y1="285.07"
+       x2="809.64"
+       y2="326.438"
+       id="line162" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="808.052,331.179 819.123,329.614 811.229,321.697 "
+       id="polygon164" />
+    <polygon
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="808.052,331.179 819.123,329.614 811.229,321.697 "
+       id="polygon166" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="374.019"
+     y="292"
+     id="text172">
+    <tspan
+       x="374.019"
+       y="292"
+       id="tspan170"
+       style="fill:#808080;">No</tspan>
+  </text>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="829.019"
+     y="296"
+     id="text176">
+    <tspan
+       x="829.019"
+       y="296"
+       id="tspan174"
+       style="fill:#808080;">Yes</tspan>
+  </text>
+  <g
+     id="g184">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="313.019"
+       y1="472.75"
+       x2="260.164"
+       y2="529.937"
+       id="line178" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="256.493,526.543 253.377,537.281 263.836,533.331 "
+       id="polygon180" />
+    <polygon
+       style="fill:#999999;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="256.493,526.543 253.377,537.281 263.836,533.331 "
+       id="polygon182" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="238.42"
+     y="491.05"
+     id="text188">
+    <tspan
+       x="238.42"
+       y="491.05"
+       id="tspan186"
+       style="fill:#808080;">No</tspan>
+  </text>
+  <g
+     id="g196">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="417.455"
+       y1="473.876"
+       x2="458.684"
+       y2="527.253"
+       id="line190" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="454.727,530.309 464.797,535.167 462.641,524.196 "
+       id="polygon192" />
+    <polygon
+       style="fill:#cccccc;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="454.727,530.309 464.797,535.167 462.641,524.196 "
+       id="polygon194" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="467.419"
+     y="492.05"
+     id="text200">
+    <tspan
+       x="467.419"
+       y="492.05"
+       id="tspan198"
+       style="fill:#808080;">Yes</tspan>
+  </text>
+  <g
+     id="g208">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="794.019"
+       y1="474.876"
+       x2="741.164"
+       y2="532.063"
+       id="line202" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="737.492,528.67 734.377,539.407 744.836,535.457 "
+       id="polygon204" />
+    <polygon
+       style="fill:#cccccc;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="737.492,528.67 734.377,539.407 744.836,535.457 "
+       id="polygon206" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="719.419"
+     y="493.176"
+     id="text212">
+    <tspan
+       x="719.419"
+       y="493.176"
+       id="tspan210"
+       style="fill:#808080;">No</tspan>
+  </text>
+  <g
+     id="g220">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="914.224"
+       y1="475.876"
+       x2="955.453"
+       y2="529.253"
+       id="line214" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="951.496,532.309 961.566,537.167 959.41,526.196 "
+       id="polygon216" />
+    <polygon
+       style="fill:#cccccc;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="951.496,532.309 961.566,537.167 959.41,526.196 "
+       id="polygon218" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="964.189"
+     y="494.05"
+     id="text224">
+    <tspan
+       x="964.189"
+       y="494.05"
+       id="tspan222"
+       style="fill:#808080;">Yes</tspan>
+  </text>
+  <g
+     id="g232">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="696.019"
+       y1="681.876"
+       x2="643.164"
+       y2="739.063"
+       id="line226" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="639.492,735.669 636.377,746.407 646.836,742.457 "
+       id="polygon228" />
+    <polygon
+       style="fill:#cccccc;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="639.492,735.669 636.377,746.407 646.836,742.457 "
+       id="polygon230" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="621.419"
+     y="700.176"
+     id="text236">
+    <tspan
+       x="621.419"
+       y="700.176"
+       id="tspan234"
+       style="fill:#808080;">No</tspan>
+  </text>
+  <g
+     id="g244">
+    <line
+       style="fill:#b3b3b3;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       x1="794.224"
+       y1="686.876"
+       x2="835.453"
+       y2="740.252"
+       id="line238" />
+    <polygon
+       style="fill:#b3b3b3"
+       points="831.496,743.309 841.566,748.167 839.41,737.196 "
+       id="polygon240" />
+    <polygon
+       style="fill:#cccccc;fill-opacity:0;stroke-width:4;stroke:#b3b3b3"
+       points="831.496,743.309 841.566,748.167 839.41,737.196 "
+       id="polygon242" />
+  </g>
+  <text
+     font-size="22.5774"
+     style="fill:#808080;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal;"
+     x="844.189"
+     y="705.049"
+     id="text248">
+    <tspan
+       x="844.189"
+       y="705.049"
+       id="tspan246"
+       style="fill:#808080;">Yes</tspan>
+  </text>
+</svg>
