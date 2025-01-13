@@ -1,35 +1,34 @@
-# LineageOS for microG
-![](https://github.com/lineageos4microg/lineageos4microg.github.io/blob/1510a45d2dd924fcd2bf204ca71308f2f21ffcee/images/screen_logo.jpg)
-### ![The full Android experience without Google Apps](../../l4m-website/images/screen_logo.jpg)
-
-Welcome to the LineageOS for microG  wiki!
-
-The project website is at https://lineage.microg.org/
-
-<ul class="actions">
-  <p>
-  <li>
-    <a href="https://download.lineage.microg.org/" class=
-    "button special icon fa-download">Download</a>
-  </li>
-  <li>
-    <a href="https://liberapay.com/microG/" class=
-    "button icon scrolly">
-      <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63;padding-right:0.3em"></i>
-      Donate</a>
-  </li>
-  </p>
-  <p>
-  <li>
-    <a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Installation" class=
-    "button icon fa-chevron-down scrolly">Installation</a>
-  </li>
-  <li>
-    <a href="https://github.com/lineageos4microg/l4m-wiki/wiki/" class=
-    "button icon fa-chevron-down scrolly">Docs</a>
-  </li>
-  </p>
-</ul>
+<header id="header">
+  <div class="content">
+    <h1><a href="#">LineageOS for microG</a></h1>
+    <p>The full Android experience<br>
+    without Google Apps</p>
+    <ul class="actions">
+      <p>
+      <li>
+        <a href="https://download.lineage.microg.org/" class=
+        "button special icon fa-download">Download</a>
+      </li>
+      <li>
+        <a href="https://liberapay.com/microG/" class=
+        "button icon scrolly">
+          <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63;padding-right:0.3em"></i>
+          Donate</a>
+      </li>
+      <li>
+        <a href="https://github.com/lineageos4microg/l4m-wiki/wiki/Installation" class=
+        "button icon fa-chevron-down scrolly">Installation</a>
+      </li>
+      <li>
+        <a href="https://github.com/lineageos4microg/l4m-wiki/wiki/" class=
+        "button icon fa-chevron-down scrolly">Docs</a>
+      </li>
+      </p>
+    </ul>
+  </div>
+  <div class="inner"><img src="/images/screen_logo.jpg" alt=
+    ""></div>
+</header>
 
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
