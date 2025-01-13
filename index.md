@@ -1,5 +1,5 @@
 # LineageOS for microG
-![The full Android experience without Google Apps](https://github.com/lineageos4microg/lineageos4microg.github.io/blob/1510a45d2dd924fcd2bf204ca71308f2f21ffcee/images/screen_logo.jpg)
+![The full Android experience without Google Apps](images/screen_logo.jpg)
 
 ## The full Android experience without Google Apps
 
