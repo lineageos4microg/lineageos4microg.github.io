@@ -3,10 +3,6 @@
 
 ## The full Android experience without Google Apps
 
-Welcome to the LineageOS for microG  wiki!
-
-The project website is at <https://lineage.microg.org/>
-
 <ul class="actions">
   <p>
   <li>
@@ -29,7 +25,6 @@ The project website is at <https://lineage.microg.org/>
   </li>
   </p>
 </ul>
-
 
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
