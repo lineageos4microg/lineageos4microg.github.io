@@ -40,7 +40,7 @@ LineageOS for microG is a custom Android ROM which integrates the following comp
 
 A secondary objective is to make our main build tool available for other projects and individuals to use to make and maintain their own builds:
 
-- of LineageOS for microG, 'vanilla' LineageOS, and / or other LOS-based custom ROMs (e.g. [IodéOS](https://iode.tech/));
+- of LineageOS for microG, 'vanilla' LineageOS, and / or other LineageOS-based custom ROMs (e.g. [IodéOS](https://iode.tech/));
 - for other devices, whether or not officially supported by those projects.
 
 ### Project deliverables
@@ -51,6 +51,10 @@ A secondary objective is to make our main build tool available for other project
 4. Documentation
     - The [main project wiki](https://github.com/lineageos4microg/l4m-wiki/wiki)
     - The Docker image [`README.md`](https://github.com/lineageos4microg/docker-lineage-cicd#) and [wiki](https://github.com/lineageos4microg/docker-lineage-cicd/wiki)
+
+#### Builds for devices no longer supported by LineageOS
+
+When LineageOS stop supporting a device, the last LineageOS for MicroG build will be kept available on [our download server](https://download.lineage.microg.org/)
 
 ### Build Targets and Frequency
 
