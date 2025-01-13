@@ -12,7 +12,7 @@
   <li>
     <a href="https://liberapay.com/microG/" class=
     "button icon scrolly">
-      <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63;padding-right:0.3em"></i>
+      <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63"></i>
       Donate</a>
   </li>
   <li>
@@ -46,7 +46,7 @@ A secondary objective is to make our main build tool available for other project
 ### Project deliverables
 
 1. The device-specific ROM `zip` files, for manual and OTA installation: made available in sub-directories on [the download server](https://download.lineage.microg.org/)
-2. Other device-specific `zip` and `.img` files that are needed for installing or updating the ROM zip file (e.g. `boot.img`,  `recovery.img`).
+2. Other device-specific `zip` and `.img` files that are needed for installing or updating the ROM zip file (e.g. `boot.img`, `recovery.img`): also made available on [the download server](https://download.lineage.microg.org/)
 3. The Docker image used to make the builds: made available on [DockerHub](https://hub.docker.com/r/lineageos4microg/docker-lineage-cicd/)
 4. Documentation
     - The [main project wiki](https://github.com/lineageos4microg/l4m-wiki/wiki)
@@ -56,7 +56,7 @@ A secondary objective is to make our main build tool available for other project
 
 We build for the same devices as LineageOS using [their list of build targets](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) as the input to our build run.
 
-We aim to make builds monthly, and we (usually) start a 'build run' starting on the first day of the month. The devices included in a build run are defined by the content of the [LineageOS target list](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) ***at the point the build run starts***. Our monthly build run takes 15-20 days to complete. The progress of the build run is published in [a dedicated matrix room](https://matrix.to/#/#microg-lineage-os-builds:matrix.domainepublic.net)
+We aim to make builds monthly, and we (usually) start a 'build run' on the first day of the month. The devices included in a build run are defined by the content of the [LineageOS target list](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) ***at the point the build run starts***. Our monthly build run takes 20-25 days to complete. The progress of the build run is published in [a dedicated matrix room](https://matrix.to/#/#microg-lineage-os-builds:matrix.domainepublic.net)
 
 If builds for any devices fail during a build run, we will try the build again ***after the main build run has completed***. If you do not see a new build for your device when you expect it, please check whether the build failure was reported in the matrix room. If it was, there is no need to report it - we will deal with it! If the failure was not reported in the matrix room, then please report it in [the `docker-lineage-cicd` project issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues) or in [the XDA Forums thread](https://xdaforums.com/t/lineageos-for-microg.3700997/)
 
@@ -71,10 +71,8 @@ Like LineageOS, the project also uses 'TheMuppets` [github](https://github.com/T
 
 The main work of the project is to integrate the upstream components and build them into the ROM images we make available.
 
-
 ## Project Sponsor
 Thanks to [SysEleven](https://www.syseleven.de/en/) who are generously providing the cloud computing resources the project uses to make and publish our builds, and to host this site.
-
 
 <footer id="footer">
   <p class="copyright">© LineageOS for microG</p>
