@@ -80,5 +80,5 @@ Thanks to [SysEleven](https://www.syseleven.de/en/) who are generously providing
 
 
 <footer id="footer">
-  <p class="copyright">© LineageOS for microG.</a></p>
+  <p class="copyright">© LineageOS for microG</p>
 </footer>
