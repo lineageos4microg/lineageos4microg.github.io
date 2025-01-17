@@ -52,7 +52,7 @@ The project is currently in a fairly stable state:
     - to make any changes needed when upstreams make changes. In particular, when LineageOS introduces support for a new Android version and / or drops support for older Android versions
 
 The project is therefore - in the opinion of the currently active maintainers - essentially 'feature complete' and in 'maintenance' mode. The only change that we believe might significantly improve the project is to support other classes of Android devices, specifically
-- `Minimal` & `Android TV` devices (see Note 2)
+- ~~`Minimal` & `Android TV` devices~~ (Now mostly supported)
 - [`Treble-capable`](https://www.xda-developers.com/list-android-devices-project-treble-support/) devices which are not officially supported by LOS.  [As has recently been suggested](https://github.com/lineageos4microg/docker-lineage-cicd/issues/462) building for the `lineage_gsi` target would make our builds available for and usable on these devices.
 
 ### Project Deliverables
