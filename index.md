@@ -43,7 +43,19 @@ A secondary objective is to make our main build tool available for other project
 - of LineageOS for microG, 'vanilla' LineageOS, and / or other LineageOS-based custom ROMs (e.g. [IodéOS](https://iode.tech/));
 - for other devices, whether or not officially supported by those projects.
 
-### Project deliverables
+### Project Status
+
+The project is currently in a fairly stable state:
+- we are (mostly) achieving our objective of delivering monthly builds
+- the only essential work that is ongoing is to
+    - monitor the delivery process,  to fix any problems that may occur, and to make any changes that are needed to ensure that the problems do not recur
+    - to make any changes needed when upstreams make changes. In particular, when LineageOS introduces support for a new Android version and / or drops support for older Android versions
+
+The project is therefore - in the opinion of the currently active maintainers - essentially 'feature complete' and in 'maintenance' mode. The only change that we believe might significantly improve the project is to support other classes of Android devices, specifically
+- `Minimal` & `Android TV` devices (see Note 2)
+- [`Treble-capable`](https://www.xda-developers.com/list-android-devices-project-treble-support/) devices which are not officially supported by LOS.  [As has recently been suggested](https://github.com/lineageos4microg/docker-lineage-cicd/issues/462) building for the `lineage_gsi` target would make our builds available for and usable on these devices.
+
+### Project Deliverables
 
 1. The device-specific ROM `zip` files, for manual and OTA installation: made available in sub-directories on [the download server](https://download.lineage.microg.org/)
 2. Other device-specific `zip` and `.img` files that are needed for installing or updating the ROM zip file (e.g. `boot.img`, `recovery.img`): also made available on [the download server](https://download.lineage.microg.org/)
