@@ -70,6 +70,27 @@ When LineageOS stop supporting a device, the last LineageOS for MicroG build wil
 
 Some builds for devices which were last supported at version `lineage-18.1` can be found on [the Wayback Machine / Internet Archive](https://web.archive.org/web/20240527093848/https://download.lineage.microg.org/archive/)
 
+### Project Priorities
+
+There are always changes that ***could*** be made to the project: any project can always be "improved" in some way. When any changes are suggested, we will make decisions about them according to where they fit in the following "spectrum" of priority and importance:
+1. ***Must*** be changed. Not changing them means we cannot deliver our key objectives e.g.
+  - we cannot make our builds e.g. because our build tools are failing, our build servers are unavailable or out of service;
+  - we cannot make the builds available for download e.g because the download server is unavailable or out of disk space
+  - the builds don't run e.g. the [recent bootloop](https://github.com/lineageos4microg/docker-lineage-cicd/issues/720) or [flashing](https://github.com/lineageos4microg/docker-lineage-cicd/issues/727) problems
+2. ***Should*** be changed. Changing them will significantly  
+  - improve the quality of our deliverables (bulds, tools, documentation)
+  - make life easier for users of our deliverables
+  - make life easier for project maintainers
+3. ***Could*** be fixed. Fixing them may
+  - slightly improve quality, but take a lot of effort
+  - add new functionality (to our tools or to our builds) which is 'nice to have' but not essential e.g. keeping old builds available after official support has ended
+  - 'scratch an itch' for the project maintainers: e.g. changing the Docker image so that it can make builds of IodéOS or other custom ROMs based on lineageos4microg.
+4. ***Should not*** be changed
+  - change has limited benefit (for deliverable quality, for users, for project maintainers), but high cost / effort, or high risk
+  - change has no benefit
+
+Decisions about such changes are likely to be subjective: things like 'quality' or 'risk' can sometimes be very hard to define or to agree on. For the most part though, decisions on where a change lies on this spectrum are usually quite clear, to the project maintainers at least. 😄
+
 ### Build Targets and Frequency
 
 We build for the same devices as LineageOS using [their list of build targets](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) as the input to our build run.
