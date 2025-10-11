@@ -93,6 +93,22 @@ We aim to make builds monthly, and we (usually) start a 'build run' on the first
 
 If builds for any devices fail during a build run, we will try the build again ***after the main build run has completed***. If you do not see a new build for your device when you expect it, please check whether the build failure was reported in the matrix room. If it was, there is no need to report it - we will deal with it! If the failure was not reported in the matrix room, then please report it in [the `docker-lineage-cicd` project issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues) or in [the XDA Forums thread](https://xdaforums.com/t/lineageos-for-microg.3700997/)
 
+#### Building branches no longer built by LineageOS
+
+The LineageOS project (LOS) make regular builds of the two branches that correspond to the two latest supported Android versions. For example, in September 2025 LOS are making regular builds of their `lineage-21.1` (Android 14) and `lineage-22.2` (Android 15). Once regular builds of the `lineage-23.0` (Android 16) branch start being made, the builds of the  `lineage-21.1` branch will stop, so that any devices that are 'stuck' on that branch will no longer receive updates. Until recently 
+
+However many of the fixes in these branches are 'back-ported' to earlier branches: for example the `lineage-20.0` (Android 13) and` lineage-18.1`(Android 11) branches have both had several fixes merged ***since*** the last official LOS builds. 
+
+This project currently has a certain amount of unused capacity on our build servers, so we have decided to use some of that capacity to make builds of both LineageOS for microG (L4M) ***and*** 'normal' LineageOS  ***without*** microG (referred to from here on as 'vanilla LOS*', or just 'LOS'), using these branches. In our October 2025 build run we made `lineage-20.0`builds for the following devices: `billie,flashlmdd,mh2lm,nx611j,onclite,racer`.
+
+L4M builds of these branches should appear as OTA updates. 'Vanilla' LOS builds will have to be installed manually from recovery / `adb sideload`**. 
+
+We plan to continue to do this as often as we can. The frequency of these builds will vary depending on available capacity on the project's build servers, and the number of changes made in a branch since the last build.
+
+(* The word 'vanilla' is used here with the meaning ['ordinary, with no special or extra features'.](https://www.collinsdictionary.com/dictionary/english/vanilla))
+
+(** For now at least. OTA updates for these 'vanilla' LOS builds is on the ToDo list)
+
 #### Builds for devices no longer supported by LineageOS
 
 When LineageOS stop supporting a device, the last LineageOS for MicroG build will be kept available on [our download server](https://download.lineage.microg.org/)
