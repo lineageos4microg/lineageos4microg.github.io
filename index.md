@@ -115,6 +115,10 @@ When LineageOS stop supporting a device, the last LineageOS for MicroG build wil
 
 Some builds for devices which were last supported at version `lineage-18.1` can be found on [the Wayback Machine / Internet Archive](https://web.archive.org/web/20240527093848/https://download.lineage.microg.org/archive/)
 
+#### Unofficial builds of IodéOS
+
+The current project maintainers are involved with, and support the aims of the [IodéOS project](https://iode.tech/), another privacy respecting Android custom ROM, based on LineageOS for microG. We make regular  - usually monthly -  unofficial builds of IodéOS for Google Pixel, Sony Xperia, and a small number of other devices. The project has a certain amount of spare capacity on its build and download servers, and we are currently using this capacity to help make and [publish](https://download.lineage.microg.org/IodeOS/) these builds.
+
 ### Project Github repositories
 
 The project has two main public repositories on GitHub:
