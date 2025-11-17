@@ -119,6 +119,16 @@ There are two groups of users who  ***are*** affected by builds including the Pl
 1. Users who use the Nationwide UK banking and (possibly) Revolut apps (or any other app that did not work before we included the PI patch in our build). These users are currently better off that they were: these apps will now work, and will continue to work so long as users take care when receiving OTA updates to ***not*** install an update where the filename includes the text `NO-PI-PATCH`;
 2. Users who use  Deutsche Bank Photo Tan or  Triodos Bank apps (NL & UK). These users are ***slightly*** worse off than they were. They need to  take care when receiving OTA updates to  ***only*** install an update where the filename includes the text `NO-PI-PATCH`.
 
+#### Unresolved security issue
+
+An issue has been raised in our issue tracker that APEX files are signed with test keys rather than with the project's own signing keys. This creates a vulnerability that has been present in our ROMs since LineageOS 19 builds. Having investigated this issue, the project maintainers believe that:
+1. according to [this description of the vulnerability](https://rtx.meta.security/exploitation/2024/01/30/Android-vendors-APEX-test-keys.html), it seems that it is a very small attack surface: the attacker must have physical access to the device and to a computer authorised for debugging, all without the knowledge of the device owner;
+2. the risk to users of our ROMs in day to day usage of our ROMs is minimal;
+3. fixing the issue for all our users would involve the implementation, testing and distribuition of a 'migration script' to run on approximately 250 devices;
+4. the project does not have the time or resources to do that, though we would welcome anyone who could help with this or with another means of fixing the issue.
+
+So the issue is currently ***not*** fixed, and will not be fixed unless there is an easy 'system-wide' fix that will prevent / disable updating APEXs separately from updating the whole ROM. 
+
 #### Builds for devices no longer supported by LineageOS
 
 When LineageOS stop supporting a device, the last LineageOS for MicroG build will be kept available on [our download server](https://download.lineage.microg.org/)
