@@ -26,6 +26,15 @@
   </p>
 </ul>
 
+_________________________
+
+# Download server issues
+
+We recently found some issues with our download server, which we are in the process of fixing. In the meantime, the server is running, but it won’t be serving any content until we have completed the necessary fixes. We can’t give an ETA for that - it will take as long as it takes - but we expect the timescale to be a (small) number of days rather than hours or weeks.
+
+Thank you for your patience.
+_____________________________
+
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
 - [The LineageOS Android Distribution](https://lineageos.org/)<br>A free and open-source operating system for various devices, based on the Android mobile platform.
