@@ -34,7 +34,7 @@ At 09:25GMT on Monday 8th December 2025, the project was informed, by XDA Forums
 ## TL:DR
 The project had a security problem, which ***potentially*** affected the reliability and integrity of the download server and the files it made available for download and OTA update.
 
-As soon as we were able, we stopped the server from serving content for downloads and OTA update, removed existing files, revoked the compromised `rsync` key, and installed a new one. The server is still online, serving the website.
+As soon as we were able, we stopped the server from serving content for downloads and OTA update, removed existing files, revoked the compromised `rsync` key, and installed a new one. The website is now being served from a new server and the old server has been taken offline.
 
 We do not believe that the server ***was*** ever actually compromised, but we cannot guarantee that. So we are in the process of building from scratch and testing a new server, which we will ***know*** to be trustworthy. Once this comes online, we can be confident that files made available on the new server can be trusted. We believe that the actions we have taken, and plan to take in the future, are proportionate to the scale of - and the potential threats posed by - the problem, and sufficient to ensure that users can safely install the files that will be made available on the new server. 
 
