@@ -32,17 +32,33 @@ _________________________
 At 09:25GMT on Monday 8th December 2025, the project was informed, by XDA Forums user `j4nn`, in an XDA Forums Private Message, about a security issue affecting the project, and its download server (which also serves the front page of the project website).
 
 ## TL:DR
-The project had a security problem, which ***potentially*** affected the reliability and integrity of the download server and the files it made available for download and OTA update.
 
-As soon as we were able, we stopped the server from serving content for downloads and OTA update, removed existing files, revoked the compromised `rsync` key, and installed a new one. The website is now being served from a new server and the old server has been taken offline.
+The project had a security problem - project private keys were visible in a publicly visible online git repository. This issue potentially 
+- affected the reliability and integrity of the download server and the files it made available for download and OTA update
+- allowed an attacker to make a build and sign it with compromised signing keys, so that the build would appear to have been made by the project.
 
-We do not believe that the server ***was*** ever actually compromised, but we cannot guarantee that. So we are in the process of building from scratch and testing a new server, which we will ***know*** to be trustworthy. Once this comes online, we can be confident that files made available on the new server can be trusted. We believe that the actions we have taken, and plan to take in the future, are proportionate to the scale of - and the potential threats posed by - the problem, and sufficient to ensure that users can safely install the files that will be made available on the new server. 
+## 1. Potential unauthorised access to the download server
 
-### Is my phone compromised?
+As soon as we were able, we stopped the server from serving content for downloads and OTA update, removed existing files, revoked the compromised `rsync` key, and installed a new one. The website is now being served from a new server and the old server has been taken offline. The server is still online, serving the website.
+
+We do not believe that the server was ever actually compromised, but we cannot guarantee that. So we are in the process of building from scratch and testing a new server, which we will know to be trustworthy. Once this comes online, we can be confident that files made available on the new server can be trusted. We believe that the actions we have taken, and plan to take in the future, are proportionate to the scale of - and the potential threats posed by - the problem, and sufficient to ensure that users can safely install the files that will be made available on the new server.
+
+Please read [this section of the wiki ](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues#unauthorised-access-and-upload-risk-and-actions)for more information on this possible risk
+
+## 2. Potential malicious builds signed with project keys
+
+An attacker could have made a malicious build, and signed it using the compromised signing keys, so he the malicious build would effectively be signed with the project keys, and therefore be trustworthy. We are no aware of any such builds
+
+    being uploaded to the download server
+    being circulated elsewhere
+
+Please read [this section of the wiki ](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues#unauthorised-builds-risk-and-actions)for more information on this possible risk
+
+## 3.Is my phone compromised?
 
 In the view of the project maintainers, if you installed the build from the download server (either manually or via OTA), then ***almost*** certainly not. Please read [this section of the wiki](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues)
 
-### Questions and clarifications
+## 4. Questions and clarifications
 
 The project maintainers do not have the 'bandwidth' to engage in online discussion about this issue. We will however
 - monitor any questions and comments about it in our communication channels (primarily the [XDA Forum thread](https://xdaforums.com/t/lineageos-for-microg.3700997/) and [this issue in our github issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues/835), but also on [the IodéOS community forums](https://community.iode.tech/latest), and the `microG` Matrix room `#microG:matrix.org` );
