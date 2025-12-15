@@ -48,9 +48,8 @@ Please read [this section of the wiki ](https://github.com/lineageos4microg/l4m-
 ## 2. Potential malicious builds signed with project keys
 
 An attacker could have made a malicious build, and signed it using the compromised signing keys, so he the malicious build would effectively be signed with the project keys, and therefore be trustworthy. We are no aware of any such builds
-
-    being uploaded to the download server
-    being circulated elsewhere
+1. being uploaded to the download server
+2. being circulated elsewhere
 
 Please read [this section of the wiki ](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues#unauthorised-builds-risk-and-actions)for more information on this possible risk
 
