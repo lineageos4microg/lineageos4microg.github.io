@@ -28,12 +28,29 @@
 
 _________________________
 
-# Download server issues
+# LineageOS for microG: December 2025 security issues
+At 09:25GMT on Monday 8th December 2025, the project was informed, by XDA Forums user `j4nn`, in an XDA Forums Private Message, about a security issue affecting the project, and its download server (which also serves the front page of the project website).
 
-We recently found some issues with our download server, which we are in the process of fixing. In the meantime, the server is running, but it won’t be serving any content until we have completed the necessary fixes. We can’t give an ETA for that - it will take as long as it takes - but we expect the timescale to be a (small) number of days rather than hours or weeks.
+## TL:DR
+The project had a security problem, which ***potentially*** affected the reliability and integrity of the download server and the files it made available for download and OTA update.
 
-Thank you for your patience.
+As soon as we were able, we stopped the server from serving content for downloads and OTA update, removed existing files, revoked the compromised `rsync` key, and installed a new one. The server is still online, serving the website.
+
+We do not believe that the server ***was*** ever actually compromised, but we cannot guarantee that. So we are in the process of building from scratch and testing a new server, which we will ***know*** to be trustworthy. Once this comes online, we can be confident that files made available on the new server can be trusted. We believe that the actions we have taken, and plan to take in the future, are proportionate to the scale of - and the potential threats posed by - the problem, and sufficient to ensure that users can safely install the files that will be made available on the new server. 
+
+### Is my phone compromised?
+
+In the view of the project maintainers, if you installed the build from the download server (either manually or via OTA), then ***almost*** certainly not. Please read [this section of the wiki](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues)
+
+### Questions and clarifications
+
+The project maintainers do not have the 'bandwidth' to engage in online discussion about this issue. We will however
+- monitor any questions and comments about it in our communication channels (primarily the [XDA Forum thread](https://xdaforums.com/t/lineageos-for-microg.3700997/) and [this issue in our github issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues/835), but also on [the IodéOS community forums](https://community.iode.tech/latest), and the `microG` Matrix room `#microG:matrix.org` );
+- periodically update this document, answering any questions and requests for clarification that have come up in those channels;
+- post notifications in those channels of changes to this document and any other relevant events.
+
 _____________________________
+
 
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
