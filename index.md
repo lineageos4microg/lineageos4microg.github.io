@@ -54,7 +54,7 @@ We recommend installing these new builds by folowing these steps:
  
 ### Apex signing issue is not fixed
 
-While working on these security issues, we looked at the possibility of fixing the [previously reported Apex signing vulnerabilty](https://github.com/lineageos4microg/l4m-wiki/wiki/#unresolved-security-issue). Unfortunately, fixing that issue would have taken significantly more time and effort, and would have involved further incovenience for our users. We still believe that the risk to users of our ROMs from that issue in day to day usage of our ROMs ***is minimal***, so we decided not to try to fix it alongside these issues. That issue is therefore still unresolved, and likely to remain so for some time.
+While working on these security issues, we looked at the possibility of fixing the [previously reported Apex signing vulnerabilty](https://github.com/lineageos4microg/l4m-wiki/wiki/#unresolved-security-issue). Unfortunately, fixing that issue would have taken significantly more time and effort, and would have involved further inconvenience for our users. We still believe that the risk to users of our ROMs from that issue in day to day usage of our ROMs ***is minimal***, so we decided not to try to fix it alongside these issues. That issue is therefore still unresolved, and likely to remain so for some time.
 
 ## TL:DR
 
