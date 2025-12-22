@@ -31,6 +31,31 @@ _________________________
 # LineageOS for microG: December 2025 security issues
 At 09:25GMT on Monday 8th December 2025, the project was informed, by XDA Forums user `j4nn`, in an XDA Forums Private Message, about a security issue affecting the project, and its download server (which also serves the front page of the project website).
 
+## Update Mon 22 December: Resuming builds 
+
+We have now completed the tasks that were needed to recover from these security issues:
+- our website and download server are running on a new cloud VM, rebuilt from scratch, with a new storage volume attached, and with access controlled by newly created and deployed `ssh` keys;
+- our build servers are using a new set of package signing keys to sign the builds we make and publish.
+
+We believe we are ready to start making new builds, and making them available for download. That will start after one more review by the team of what we have done so far.
+
+Builds for all devices should appear over the coming days, as each build is made. Making builds for all the current officially supported devices (Lineage 23.0 and 22.3 branches) should take around 3 weeks, if all goes well. They will be followed by builds for 'legacy' devices (21.1, 20.0 and 18.1 branches), and we hope that a 'full set' of LineageOS for microG builds will be available in roughly one month's time.
+
+These builds will appear as updates available in the Updater app. They can be ***downloaded*** in the Updater app, but when the download completes, a message will appear at the bottom of the screen sayng *"Update verfication failed"* due to the new build signing key. Additionally, if you manually download the update and attempt to install it using the Updater app, you will receive the message *"Failed to import local update".* In short, ***the new builds cannot be installed in the Updater app***. If for any reason the Updater app does not prevent you from attempting to install using  - even though we have not seen this in our testing - be warned that your data could be corrupted, making it necessary to factory reset / format data.
+
+### Installing the new builds
+
+**Do *not* try to install the new build using the Updater app**
+
+We recommend installing these new builds by folowing these steps:
+1. Take a backup, using SeedVault and / or [Android Backup Project](https://github.com/AndDiSa/android_backup_project) (if you have access to a Linux machine, real or virtual). This ***should not*** be necessary, but it's a useful step 'just in case'.
+2. Download the new build zip file from [the Download server](https://download.lineage.microg.org/) or by by getting the download URL from the "3 dots --> Copy URL" option next to the newly advertised build in the Updater app.
+3. Boot your device into recovery, and flash the new ROM zip file using `adb sideload` on your computer. Detailed instructions for these steps are available from the LineageOS installation instructions for your device (which can be found by following the links from their ['Devices' wiki page](https://wiki.lineageos.org/devices/)). The recovery will report *"Signature verification failed: Install anyway?"* Choose *"Yes"* as it is understood the new build uses a different signing key than the old builds.
+ 
+### Apex signing issue is not fixed
+
+While working on these security issues, we looked at the possibility of fixing the [previously reported Apex signing vulnerabilty](https://github.com/lineageos4microg/l4m-wiki/wiki/#unresolved-security-issue). Unfortunately, fixing that issue would have taken significantly more time and effort, and would have involved further incovenience for our users. We still believe that the risk to users of our ROMs from that issue in day to day usage of our ROMs ***is minimal***, so we decided not to try to fix it alongside these issues. That issue is therefore still unresolved, and likely to remain so for some time.
+
 ## TL:DR
 
 The project had a security problem - project private keys were visible in a publicly visible online git repository. This issue potentially 
