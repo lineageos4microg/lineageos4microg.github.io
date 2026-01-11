@@ -175,16 +175,6 @@ We plan to continue to do this as often as we can. The frequency of these builds
 
 (** For now at least. OTA updates for these 'vanilla' LOS builds is on the ToDo list)
 
-#### Builds including the Play Integrity Patch
-
-In September 2025  the project started to include [a patch which improved the Play Integrity performance of our builds](https://github.com/lineageos4microg/docker-lineage-cicd/issues/784#issuecomment-3335739822), allowing some apps to work which had previously not worked. Unfortunately the patch also caused a small number of apps which had worked fine without the patch to stop working (See [here](https://github.com/lineageos4microg/docker-lineage-cicd/issues/797) and [here](https://xdaforums.com/t/rom-lineageos-21-0-unofficial-1-1-2024-06-16.4658694/post-90283433)). We therefore decided to [alternate our monthly build runs between building with and without the patch](https://github.com/lineageos4microg/docker-lineage-cicd/issues/798).
-
-Most users (who _**don't**_ use apps that either need or are broken by the PI patch) should not be affected by the patch, and can safely install any OTA update that arrives in the Updater app.
-
-There are two groups of users who  ***are*** affected by builds including the Play Integrity patch
-1. Users who use the Nationwide UK banking and (possibly) Revolut apps (or any other app that did not work before we included the PI patch in our build). These users are currently better off that they were: these apps will now work, and will continue to work so long as users take care when receiving OTA updates to ***not*** install an update where the filename includes the text `NO-PI-PATCH`;
-2. Users who use  Deutsche Bank Photo Tan or  Triodos Bank apps (NL & UK). These users are ***slightly*** worse off than they were. They need to  take care when receiving OTA updates to  ***only*** install an update where the filename includes the text `NO-PI-PATCH`.
-
 #### Unresolved security issue
 
 An issue has been raised in our issue tracker that APEX files are signed with test keys rather than with the project's own signing keys. This creates a vulnerability that has been present in our ROMs since LineageOS 19 builds. Having investigated this issue, the project maintainers believe that:
