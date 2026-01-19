@@ -28,70 +28,6 @@
 
 _________________________
 
-# LineageOS for microG: December 2025 security issues
-At 09:25GMT on Monday 8th December 2025, the project was informed, by XDA Forums user `j4nn`, in an XDA Forums Private Message, about a security issue affecting the project, and its download server (which also serves the front page of the project website).
-
-## Update Mon 22 December: Resuming builds 
-
-We have now completed the tasks that were needed to recover from these security issues:
-- our website and download server are running on a new cloud VM, rebuilt from scratch, with a new storage volume attached, and with access controlled by newly created and deployed `ssh` keys;
-- our build servers are using a new set of package signing keys to sign the builds we make and publish.
-
-We believe we are ready to start making new builds, and making them available for download. That will start after one more review by the team of what we have done so far.
-
-Builds for all devices should appear over the coming days, as each build is made. Making builds for all the current officially supported devices (Lineage 23.0 and 22.3 branches) should take around 3 weeks, if all goes well. They will be followed by builds for 'legacy' devices (21.1, 20.0 and 18.1 branches), and we hope that a 'full set' of LineageOS for microG builds will be available in roughly one month's time.
-
-These builds will appear as updates available in the Updater app. They can be ***downloaded*** in the Updater app, but when the download completes, a message will appear at the bottom of the screen sayng *"Update verfication failed"* due to the new build signing key. Additionally, if you manually download the update and attempt to install it using the Updater app, you will receive the message *"Failed to import local update".* In short, ***the new builds cannot be installed in the Updater app***. If for any reason the Updater app does not prevent you from attempting to install using  - even though we have not seen this in our testing - be warned that your data could be corrupted, making it necessary to factory reset / format data.
-
-### Installing the new builds
-
-**Do *not* try to install the new build using the Updater app**
-
-We recommend installing these new builds by folowing these steps:
-1. Take a backup, using SeedVault and / or [Android Backup Project](https://github.com/AndDiSa/android_backup_project) (if you have access to a Linux machine, real or virtual). This ***should not*** be necessary, but it's a useful step 'just in case'.
-2. Download the new build zip file from [the Download server](https://download.lineage.microg.org/) or by by getting the download URL from the "3 dots --> Copy URL" option next to the newly advertised build in the Updater app.
-3. Boot your device into recovery, and flash the new ROM zip file using `adb sideload` on your computer. Detailed instructions for these steps are available from the LineageOS installation instructions for your device (which can be found by following the links from their ['Devices' wiki page](https://wiki.lineageos.org/devices/)). The recovery will report *"Signature verification failed: Install anyway?"* Choose *"Yes"* as it is understood the new build uses a different signing key than the old builds.
- 
-### Apex signing issue is not fixed
-
-While working on these security issues, we looked at the possibility of fixing the [previously reported Apex signing vulnerabilty](https://github.com/lineageos4microg/l4m-wiki/wiki/#unresolved-security-issue). Unfortunately, fixing that issue would have taken significantly more time and effort, and would have involved further inconvenience for our users. We still believe that the risk to users of our ROMs from that issue in day to day usage of our ROMs ***is minimal***, so we decided not to try to fix it alongside these issues. That issue is therefore still unresolved, and likely to remain so for some time.
-
-## TL:DR
-
-The project had a security problem - project private keys were visible in a publicly visible online git repository. This issue potentially 
-- affected the reliability and integrity of the download server and the files it made available for download and OTA update
-- allowed an attacker to make a build and sign it with compromised signing keys, so that the build would appear to have been made by the project.
-
-## 1. Potential unauthorised access to the download server
-
-As soon as we were able, we stopped the server from serving content for downloads and OTA update, removed existing files, revoked the compromised `rsync` key, and installed a new one. The website is now being served from a new server and the old server has been taken offline. The server is still online, serving the website.
-
-We do not believe that the server was ever actually compromised, but we cannot guarantee that. So we are in the process of building from scratch and testing a new server, which we will know to be trustworthy. Once this comes online, we can be confident that files made available on the new server can be trusted. We believe that the actions we have taken, and plan to take in the future, are proportionate to the scale of - and the potential threats posed by - the problem, and sufficient to ensure that users can safely install the files that will be made available on the new server.
-
-Please read [this section of the wiki ](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues#unauthorised-access-and-upload-risk-and-actions)for more information on this possible risk
-
-## 2. Potential malicious builds signed with project keys
-
-An attacker could have made a malicious build, and signed it using the compromised signing keys, so he the malicious build would effectively be signed with the project keys, and therefore be trustworthy. We are no aware of any such builds
-1. being uploaded to the download server
-2. being circulated elsewhere
-
-Please read [this section of the wiki ](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues#unauthorised-builds-risk-and-actions)for more information on this possible risk
-
-## 3.Is my phone compromised?
-
-In the view of the project maintainers, if you installed the build from the download server (either manually or via OTA), then ***almost*** certainly not. Please read [this section of the wiki](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues)
-
-## 4. Questions and clarifications
-
-The project maintainers do not have the 'bandwidth' to engage in online discussion about this issue. We will however
-- monitor any questions and comments about it in our communication channels (primarily the [XDA Forum thread](https://xdaforums.com/t/lineageos-for-microg.3700997/) and [this issue in our github issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues/835), but also on [the IodéOS community forums](https://community.iode.tech/latest), and the `microG` Matrix room `#microG:matrix.org` );
-- periodically update this document, answering any questions and requests for clarification that have come up in those channels;
-- post notifications in those channels of changes to this document and any other relevant events.
-
-_____________________________
-
-
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
 - [The LineageOS Android Distribution](https://lineageos.org/)<br>A free and open-source operating system for various devices, based on the Android mobile platform.
@@ -106,7 +42,7 @@ LineageOS for microG is a custom Android ROM which integrates the following comp
 
 A secondary objective is to make our main build tool available for other projects and individuals to use to make and maintain their own builds:
 
-- of LineageOS for microG, 'vanilla' LineageOS, and / or other LineageOS-based custom ROMs (e.g. [IodéOS](https://iode.tech/));
+- of LineageOS for microG, 'vanilla' LineageOS, and / or other LOS-based custom ROMs (e.g. [IodéOS](https://iode.tech/));
 - for other devices, whether or not officially supported by those projects.
 
 ### Project Status
@@ -124,11 +60,11 @@ The project is therefore - in the opinion of the currently active maintainers - 
 ### Project Deliverables
 
 1. The device-specific ROM `zip` files, for manual and OTA installation: made available in sub-directories on [the download server](https://download.lineage.microg.org/)
-2. Other device-specific `zip` and `.img` files that are needed for installing or updating the ROM zip file (e.g. `boot.img`, `recovery.img`): also made available on [the download server](https://download.lineage.microg.org/)
+2. Other device-specific `zip` and `.img` files that are needed for installing or updating the ROM zip file (e.g. `boot.img`,  `recovery.img`).
 3. The Docker image used to make the builds: made available on [DockerHub](https://hub.docker.com/r/lineageos4microg/docker-lineage-cicd/)
 4. Documentation
     - The [main project wiki](https://github.com/lineageos4microg/l4m-wiki/wiki)
-    - The Docker image [`README.md`](https://github.com/lineageos4microg/docker-lineage-cicd#) and [wiki](https://github.com/lineageos4microg/docker-lineage-cicd/wiki)
+    - The Docker image [`README.md`](https://github.com/lineageos4microg/docker-lineage-cicd#) and [wiki](https://github.com/lineageos4microg/docker-lineage-cicd/wiki) 
 
 ### Project Priorities
 
@@ -141,7 +77,7 @@ There are always changes that ***could*** be made to the project: any project ca
   - improve the quality of our deliverables (bulds, tools, documentation)
   - make life easier for users of our deliverables
   - make life easier for project maintainers
-3. ***Could*** be fixed. Fixing them may
+3. ***Could*** be fixed. Fixing them may 
   - slightly improve quality, but take a lot of effort
   - add new functionality (to our tools or to our builds) which is 'nice to have' but not essential e.g. keeping old builds available after official support has ended
   - 'scratch an itch' for the project maintainers: e.g. changing the Docker image so that it can make builds of IodéOS or other custom ROMs based on lineageos4microg.
@@ -149,13 +85,13 @@ There are always changes that ***could*** be made to the project: any project ca
   - change has limited benefit (for deliverable quality, for users, for project maintainers), but high cost / effort, or high risk
   - change has no benefit
 
-Decisions about such changes are likely to be subjective: things like 'quality' or 'risk' can sometimes be very hard to define or to agree on. For the most part though, decisions on where a change lies on this spectrum are usually quite clear, to the project maintainers at least. 😄
+Decisions about such changes are likely to be subjective: things like 'quality' or 'risk' can sometimes be very hard to define or to agree on. For the most part though, decisions on where a change lies on this spectrum are usually quite clear, to the project maintainers at least. 😄 
 
 ### Build Targets and Frequency
 
 We make LineageOS for microG builds for the same devices as LineageOS using [their list of build targets](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) as the input to our build run.
 
-We aim to make builds monthly, and we (usually) start a 'build run' on the first day of the month. The devices included in a build run are defined by the content of the [LineageOS target list](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) ***at the point the build run starts***. Our monthly build run takes 20-25 days to complete. The progress of the build run is published in [a dedicated matrix room](https://matrix.to/#/#microg-lineage-os-builds:matrix.domainepublic.net)
+We aim to make builds monthly, and we (usually) start a 'build run' starting on the first day of the month. The devices included in a build run are defined by the content of the [LineageOS target list](https://github.com/LineageOS/hudson/blob/main/lineage-build-targets) ***at the point the build run starts***. Our monthly build run takes 15-20 days to complete. The progress of the build run is published in [a dedicated matrix room](https://matrix.to/#/#microg-lineage-os-builds:matrix.domainepublic.net)
 
 If builds for any devices fail during a build run, we will try the build again ***after the main build run has completed***. If you do not see a new build for your device when you expect it, please check whether the build failure was reported in the matrix room. If it was, there is no need to report it - we will deal with it! If the failure was not reported in the matrix room, then please report it in [the `docker-lineage-cicd` project issue tracker](https://github.com/lineageos4microg/docker-lineage-cicd/issues) or in [the XDA Forums thread](https://xdaforums.com/t/lineageos-for-microg.3700997/)
 
@@ -174,16 +110,6 @@ We plan to continue to do this as often as we can. The frequency of these builds
 (* The word 'vanilla' is used here with the meaning ['ordinary, with no special or extra features'.](https://www.collinsdictionary.com/dictionary/english/vanilla))
 
 (** For now at least. OTA updates for these 'vanilla' LOS builds is on the ToDo list)
-
-#### Unresolved security issue
-
-An issue has been raised in our issue tracker that APEX files are signed with test keys rather than with the project's own signing keys. This creates a vulnerability that has been present in our ROMs since LineageOS 19 builds. Having investigated this issue, the project maintainers believe that:
-1. according to [this description of the vulnerability](https://rtx.meta.security/exploitation/2024/01/30/Android-vendors-APEX-test-keys.html), it seems that it is a very small attack surface: the attacker must have physical access to the device and to a computer authorised for debugging, all without the knowledge of the device owner;
-2. the risk to users of our ROMs in day to day usage of our ROMs is minimal;
-3. fixing the issue for all our users would involve the implementation, testing and distribuition of a 'migration script' to run on approximately 250 devices;
-4. the project does not have the time or resources to do that, though we would welcome anyone who could help with this or with another means of fixing the issue.
-
-So the issue is currently ***not*** fixed, and will not be fixed unless there is an easy 'system-wide' fix that will prevent / disable updating APEXs separately from updating the whole ROM. 
 
 #### Builds for devices no longer supported by LineageOS
 
@@ -213,6 +139,22 @@ The project has two main 'upstream` projects:
 Like LineageOS, the project also uses 'TheMuppets` [github](https://github.com/TheMuppets/) and [gitlab](https://gitlab.com/the-muppets) repos as the source for device-specific vendor binary blobs.
 
 The main work of the project is to integrate the upstream components and build them into the ROM images we make available.
+
+## Security Issues
+### December 2025 security issues
+
+The project had a major security issue in December 2025, when we were informed that some project private keys had been visible in a publicly visible online git repository. The issue was dealt with and resolved. Full details available in [this wiki page](https://github.com/lineageos4microg/l4m-wiki/wiki/December-2025-security-issues)
+
+### Unresolved security issue: APEXs signed with test keys
+
+An issue has been raised in our issue tracker that APEX files are signed with test keys rather than with the project's own signing keys. This creates a vulnerability that has been present in our ROMs since LineageOS 19 builds. Having investigated this issue, the project maintainers believe that:
+1. according to [this description of the vulnerability](https://rtx.meta.security/exploitation/2024/01/30/Android-vendors-APEX-test-keys.html), it seems that it is a very small attack surface: the attacker must have physical access to the device and to a computer authorised for debugging, all without the knowledge of the device owner;
+2. the risk to users of our ROMs in day to day usage of our ROMs is minimal;
+3. fixing the issue for all our users would involve the implementation, testing and distribuition of a 'migration script' to run on approximately 250 devices;
+4. the project does not have the time or resources to do that, though we would welcome anyone who could help with this or with another means of fixing the issue.
+
+So the issue is currently ***not*** fixed, and will not be fixed unless there is an easy 'system-wide' fix that will prevent / disable updating APEXs separately from updating the whole ROM. 
+
 
 ## Project Sponsor
 Thanks to [SysEleven](https://www.syseleven.de/en/) who are generously providing the cloud computing resources the project uses to make and publish our builds, and to host this site.
