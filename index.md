@@ -26,7 +26,7 @@
   </p>
 </ul>
 
-_________________________
+________________________
 
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
@@ -101,7 +101,7 @@ The LineageOS project (LOS) make regular builds of the two branches that corresp
 
 However many of the fixes in these branches are 'back-ported' to earlier branches: for example the `lineage-20.0` (Android 13) and` lineage-18.1`(Android 11) branches have both had several fixes merged ***since*** the last official LOS builds. 
 
-This project currently has a certain amount of unused capacity on our build servers, so we have decided to use some of that capacity to make builds of both LineageOS for microG (L4M) ***and*** 'normal' LineageOS  ***without*** microG (referred to from here on as 'vanilla LOS*', or just 'LOS'), using these branches. In our October 2025 build run we made `lineage-20.0`builds for the following devices: `billie,flashlmdd,mh2lm,nx611j,onclite,racer`.
+This project currently has a certain amount of unused capacity on our build servers, so we have decided to use some of that capacity to make builds of both LineageOS for microG (L4M) ***and*** 'normal' LineageOS  ***without*** microG (referred to from here on as 'vanilla LOS*', or just 'LOS'), using these branches. the 'vanilla' LOS builds can be found in [this directory on the download server](https://vanilla.lineage.microg.org/)
 
 L4M builds of these branches should appear as OTA updates. 'Vanilla' LOS builds will have to be installed manually from recovery / `adb sideload`**. 
 
@@ -113,13 +113,13 @@ We plan to continue to do this as often as we can. The frequency of these builds
 
 #### Builds for devices no longer supported by LineageOS
 
-When LineageOS stop supporting a device, the last LineageOS for MicroG build will be kept available on [our download server](https://download.lineage.microg.org/)
+When LineageOS stop supporting a device, the last LineageOS for MicroG build will be kept available on [our download server](https://download.lineage.microg.org/). As of January 2026, builds are available for `lineage-21.0`, `lineage-20.0`, and `lineage-18.1` devices.
 
 Some builds for devices which were last supported at version `lineage-18.1` can be found on [the Wayback Machine / Internet Archive](https://web.archive.org/web/20240527093848/https://download.lineage.microg.org/archive/)
 
 #### Unofficial builds of IodéOS
 
-The current project maintainers are involved with, and support the aims of the [IodéOS project](https://iode.tech/), another privacy respecting Android custom ROM, based on LineageOS for microG. We make regular  - usually monthly -  unofficial builds of IodéOS for Google Pixel, Sony Xperia, and a small number of other devices. The project has a certain amount of spare capacity on its build and download servers, and we are currently using this capacity to help make and [publish](https://download.lineage.microg.org/IodeOS/) these builds.
+The current project maintainers are involved with, and support the aims of the [IodéOS project](https://iode.tech/), another privacy respecting Android custom ROM, based on LineageOS for microG. We make regular  - usually monthly -  unofficial builds of IodéOS for Google Pixel, Sony Xperia, and a small number of other devices. The project has a certain amount of spare capacity on its build and download servers, and we are currently using this capacity to help make and [publish](https://iode.lineage.microg.org/) these builds.
 
 ### Project Github repositories
 
@@ -159,6 +159,7 @@ So the issue is currently ***not*** fixed, and will not be fixed unless there is
 ## Project Sponsor
 Thanks to [SysEleven](https://www.syseleven.de/en/) who are generously providing the cloud computing resources the project uses to make and publish our builds, and to host this site.
 
+
 <footer id="footer">
-  <p class="copyright">© LineageOS for microG</p>
+  <p class="copyright">© LineageOS for microG.</a></p>
 </footer>
