@@ -103,13 +103,11 @@ However many of the fixes in these branches are 'back-ported' to earlier branche
 
 This project currently has a certain amount of unused capacity on our build servers, so we have decided to use some of that capacity to make builds of both LineageOS for microG (L4M) ***and*** 'normal' LineageOS  ***without*** microG (referred to from here on as 'vanilla LOS*', or just 'LOS'), using these branches. the 'vanilla' LOS builds can be found in [this directory on the download server](https://vanilla.lineage.microg.org/)
 
-L4M builds of these branches should appear as OTA updates. 'Vanilla' LOS builds will have to be installed manually from recovery / `adb sideload`**. 
+L4M and 'vanilla' LOS builds  builds of these branches should appear as OTA updates..
 
 We plan to continue to do this as often as we can. The frequency of these builds will vary depending on available capacity on the project's build servers, and the number of changes made in a branch since the last build.
 
 (* The word 'vanilla' is used here with the meaning ['ordinary, with no special or extra features'.](https://www.collinsdictionary.com/dictionary/english/vanilla))
-
-(** For now at least. OTA updates for these 'vanilla' LOS builds is on the ToDo list)
 
 #### Builds for devices no longer supported by LineageOS
 
