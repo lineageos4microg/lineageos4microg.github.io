@@ -4,15 +4,14 @@
 ## The full Android experience without Google Apps
 
 <ul class="actions">
-  <p>
   <li>
     <a href="https://download.lineage.microg.org/" class=
-    "button special icon fa-download">Download</a>
+    "button special icon fa-download">LineageOS for microG Downloads</a>
   </li>
   <li>
     <a href="https://liberapay.com/microG/" class=
     "button icon scrolly">
-      <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63"></i>
+      <i class="fa fa-heart" aria-hidden="true" style="color:#EB1E63;padding-right:0.3em"></i>
       Donate</a>
   </li>
   <li>
@@ -23,10 +22,23 @@
     <a href="https://github.com/lineageos4microg/l4m-wiki/wiki/" class=
     "button icon fa-chevron-down scrolly">Docs</a>
   </li>
-  </p>
+    <li>Other Downloads</li>
+  	<ul class="actions1">  
+      <li>
+      <a href="https://iode.lineage.microg.org/" class=
+      "button special icon fa-download">Unofficial iodéOS builds</a>
+      </li>
+      <li>
+      <a href="https://vanilla.lineage.microg.org/" class=
+      "button special icon fa-download">Unofficial 'vanilla' LineageOS builds</a>
+      </li>
+    </ul>
+  <p> </p>
 </ul>
 
+
 ________________________
+
 
 ## About
 LineageOS for microG is a custom Android ROM which integrates the following components:
